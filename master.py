@@ -1,2 +1,2 @@
-#cosas en python3
+#cosas locas en python3
 print("Primer cambio")
