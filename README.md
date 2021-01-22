@@ -1,2 +1,2 @@
 # initProj
-Descripcion del proyecto
+Versiones en desarrollo
