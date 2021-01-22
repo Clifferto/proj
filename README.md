@@ -1,2 +1,2 @@
-# initProj
-Versiones en desarrollo
+# Proj
+Descripcion del proyecto
