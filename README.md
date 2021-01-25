@@ -1,2 +1,0 @@
-# Proj
-Descripcion del proyecto
