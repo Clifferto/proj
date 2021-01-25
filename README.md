@@ -1,2 +1,1 @@
-# initProj
-Descripcion del proyecto
+# Info variada (drive)
