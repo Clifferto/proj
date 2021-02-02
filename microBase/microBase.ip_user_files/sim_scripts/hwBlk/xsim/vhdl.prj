@@ -1,0 +1,14 @@
+vhdl xil_defaultlib  \
+"../../../bd/hwBlk/ip/hwBlk_microblaze_0_0/sim/hwBlk_microblaze_0_0.vhd" \
+"../../../bd/hwBlk/ip/hwBlk_axi_timer_0_0/sim/hwBlk_axi_timer_0_0.vhd" \
+"../../../bd/hwBlk/ip/hwBlk_axi_uartlite_0_1/sim/hwBlk_axi_uartlite_0_1.vhd" \
+"../../../bd/hwBlk/ip/hwBlk_axi_gpio_0_1/sim/hwBlk_axi_gpio_0_1.vhd" \
+"../../../bd/hwBlk/ip/hwBlk_dlmb_v10_1/sim/hwBlk_dlmb_v10_1.vhd" \
+"../../../bd/hwBlk/ip/hwBlk_ilmb_v10_1/sim/hwBlk_ilmb_v10_1.vhd" \
+"../../../bd/hwBlk/ip/hwBlk_dlmb_bram_if_cntlr_1/sim/hwBlk_dlmb_bram_if_cntlr_1.vhd" \
+"../../../bd/hwBlk/ip/hwBlk_ilmb_bram_if_cntlr_1/sim/hwBlk_ilmb_bram_if_cntlr_1.vhd" \
+"../../../bd/hwBlk/ip/hwBlk_microblaze_0_axi_intc_1/sim/hwBlk_microblaze_0_axi_intc_1.vhd" \
+"../../../bd/hwBlk/ip/hwBlk_mdm_1_1/sim/hwBlk_mdm_1_1.vhd" \
+"../../../bd/hwBlk/ip/hwBlk_rst_clk_wiz_1_100M_1/sim/hwBlk_rst_clk_wiz_1_100M_1.vhd" \
+
+nosort

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1612246602">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BITSTR-SYSDEF" Name="hwBlk_wrapper.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="hwBlk_wrapper.ltx"/>
+  <File Type="BG-BGN" Name="hwBlk_wrapper.bgn"/>
+  <File Type="RBD_FILE" Name="hwBlk_wrapper.rbd"/>
+  <File Type="BG-DRC" Name="hwBlk_wrapper.drc"/>
+  <File Type="NPI_FILE" Name="hwBlk_wrapper.npi"/>
+  <File Type="RNPI_FILE" Name="hwBlk_wrapper.rnpi"/>
+  <File Type="CFI_FILE" Name="hwBlk_wrapper.cfi"/>
+  <File Type="PDI-FILE" Name="hwBlk_wrapper.pdi"/>
+  <File Type="BITSTR-MMI" Name="hwBlk_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="hwBlk_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="hwBlk_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="hwBlk_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="hwBlk_wrapper.msk"/>
+  <File Type="BG-BIN" Name="hwBlk_wrapper.bin"/>
+  <File Type="RCFI_FILE" Name="hwBlk_wrapper.rcfi"/>
+  <File Type="BG-BIT" Name="hwBlk_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="hwBlk_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="hwBlk_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="hwBlk_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="hwBlk_wrapper.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="hwBlk_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="hwBlk_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="hwBlk_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="hwBlk_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="hwBlk_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="hwBlk_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="hwBlk_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="hwBlk_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="hwBlk_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="hwBlk_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="hwBlk_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="hwBlk_wrapper_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="hwBlk_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="hwBlk_wrapper_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="hwBlk_wrapper_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="hwBlk_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="hwBlk_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="hwBlk_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="hwBlk_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="hwBlk_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="hwBlk_wrapper_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="hwBlk_wrapper_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="hwBlk_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="hwBlk_wrapper_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="hwBlk_wrapper_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="hwBlk_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="hwBlk_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="hwBlk_wrapper_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="hwBlk_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="hwBlk_wrapper_postplace_pwropt.dcp"/>
+  <File Type="PLACE-TIMING" Name="hwBlk_wrapper_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="hwBlk_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="hwBlk_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="hwBlk_wrapper_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="hwBlk_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="hwBlk_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="hwBlk_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="hwBlk_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="hwBlk_wrapper_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="hwBlk_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="hwBlk_wrapper_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="hwBlk_wrapper_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="hwBlk_wrapper_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="hwBlk_wrapper.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="hwBlk_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="hwBlk_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="hwBlk_wrapper_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="hwBlk_wrapper_timing_summary_init.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="hwBlk_wrapper_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="hwBlk_wrapper_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="hwBlk_wrapper_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="hwBlk_wrapper.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/hwBlk/hwBlk.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/hwBlk/hdl/hwBlk_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="hwBlk_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="hwBlk_microblaze_0_axi_intc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hwBlk_mdm_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hwBlk_xbar_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hwBlk_rst_clk_wiz_1_100M_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hwBlk_ilmb_bram_if_cntlr_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hwBlk_dlmb_v10_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hwBlk_ilmb_v10_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hwBlk_vio_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hwBlk_axi_gpio_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hwBlk_clk_wiz_1_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hwBlk_axi_uartlite_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hwBlk_lmb_bram_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hwBlk_axi_timer_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="hwBlk_dlmb_bram_if_cntlr_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="hwBlk_microblaze_0_0"/>
+</GenRun>
