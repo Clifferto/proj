@@ -1,0 +1,29 @@
+Nothing to build in platform 'hwBlk_wrapper'
+
+11:39:50 **** Incremental Build of configuration Debug for project microBase ****
+make all 
+make: Nothing to be done for 'all'.
+11:39:52 **** Incremental Build of configuration Debug for project microBase_system ****
+make all 
+Skipping SD card image generation. Reason: The system project only has applications for microblaze processors.
+11:40:40 **** Incremental Build of configuration Debug for project microBase ****
+make all 
+Building file: ../src/testperiph.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I/media/cliff/procom/verilog/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+Finished building: ../src/testperiph.c
+ 
+Building target: microBase.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/media/cliff/procom/verilog/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "microBase.elf"  ./src/testperiph.o ./src/xgpio_tapp_example.o ./src/xintc_tapp_example.o ./src/xtmrctr_intr_example.o ./src/xtmrctr_selftest_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: microBase.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size microBase.elf  |tee "microBase.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  10424	    348	   3380	  14152	   3748	microBase.elf
+Finished building: microBase.elf.size
+ 
+11:56:48 **** Incremental Build of configuration Debug for project microBase ****
+make all 
+make: Nothing to be done for 'all'.

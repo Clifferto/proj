@@ -1,0 +1,22 @@
+timestamp=[2021-02-02 03:57:56], mode=WORKBENCH_START, duration=0:00:22.829, duration_ms=22829, data={}
+timestamp=[2021-02-02 03:58:43], mode=WORKBENCH_UI_INIT, duration=0:00:46.730, duration_ms=46730, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2021-02-02 04:00:13], mode=APP_CREATION, duration=0:00:23.142, duration_ms=23142, data={name=microBase, project_type=sdk, os=standalone, processor=microblaze, runtime=cpp, platform=hwBlk_wrapper, application_type=application}
+timestamp=[2021-02-02 04:08:23], mode=PLATFORM_GENERATION, duration=0:00:15.938, duration_ms=15938, data={name=hwBlk_wrapper}
+timestamp=[2021-02-02 04:14:44], mode=WORKBENCH_START, duration=0:00:33.734, duration_ms=33734, data={}
+timestamp=[2021-02-02 04:14:51], mode=WORKBENCH_UI_INIT, duration=0:00:07.596, duration_ms=7596, data={editors_count=8, platform_editors_count=5, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,hwBlk_wrapper,microBase,microBase_system}
+timestamp=[2021-02-02 04:17:35], mode=WORKBENCH_START, duration=0:00:32.426, duration_ms=32426, data={}
+timestamp=[2021-02-02 04:17:43], mode=WORKBENCH_UI_INIT, duration=0:00:08.301, duration_ms=8301, data={editors_count=8, platform_editors_count=5, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,hwBlk_wrapper,microBase,microBase_system}
+timestamp=[2021-02-02 04:20:08], mode=PLATFORM_GENERATION, duration=0:00:22.078, duration_ms=22078, data={name=hwBlk_wrapper}
+timestamp=[2021-02-02 04:21:56], mode=PLATFORM_GENERATION, duration=0:00:08.742, duration_ms=8742, data={name=hwBlk_wrapper}
+timestamp=[2021-02-02 04:22:14], mode=PLATFORM_GENERATION, duration=0:00:17.010, duration_ms=17010, data={name=hwBlk_wrapper}
+timestamp=[2021-02-02 15:51:45], mode=WORKBENCH_START, duration=0:01:23.097, duration_ms=83097, data={}
+timestamp=[2021-02-02 15:51:51], mode=WORKBENCH_UI_INIT, duration=0:00:06.116, duration_ms=6116, data={editors_count=8, platform_editors_count=5, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,hwBlk_wrapper,microBase,microBase_system}
+timestamp=[2021-02-02 17:03:28], mode=WORKBENCH_START, duration=0:00:22.451, duration_ms=22451, data={}
+timestamp=[2021-02-02 17:03:33], mode=WORKBENCH_UI_INIT, duration=0:00:04.962, duration_ms=4962, data={editors_count=8, platform_editors_count=5, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,hwBlk_wrapper,microBase,microBase_system}
+timestamp=[2021-02-02 17:13:07], mode=PLATFORM_GENERATION, duration=0:00:26.080, duration_ms=26080, data={name=hwBlk_wrapper}
+timestamp=[2021-02-02 17:22:18], mode=WORKBENCH_START, duration=0:00:22.032, duration_ms=22032, data={}
+timestamp=[2021-02-02 17:22:23], mode=WORKBENCH_UI_INIT, duration=0:00:05.036, duration_ms=5036, data={editors_count=9, platform_editors_count=6, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,hwBlk_wrapper,microBase,microBase_system}
+timestamp=[2021-02-02 17:23:38], mode=PLATFORM_GENERATION, duration=0:00:13.437, duration_ms=13437, data={name=hwBlk_wrapper}
+timestamp=[2021-02-02 17:23:53], mode=PLATFORM_GENERATION, duration=0:00:14.413, duration_ms=14413, data={name=hwBlk_wrapper}
+timestamp=[2021-02-03 11:22:41], mode=WORKBENCH_START, duration=0:00:52.324, duration_ms=52324, data={}
+timestamp=[2021-02-03 11:22:48], mode=WORKBENCH_UI_INIT, duration=0:00:07.286, duration_ms=7286, data={editors_count=17, platform_editors_count=13, projects_count=4, platform_projects_count=1, active_platform_editor=true, projects=RemoteSystemsTempFiles,hwBlk_wrapper,microBase,microBase_system}

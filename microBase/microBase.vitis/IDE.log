@@ -1,0 +1,243 @@
+03:58:02 INFO  : Launching XSCT server: xsct -n  -interactive /media/cliff/procom/verilog/microBase/microBase.vitis/temp_xsdb_launch_script.tcl
+03:58:25 INFO  : XSCT server has started successfully.
+03:58:25 INFO  : plnx-install-location is set to ''
+03:58:25 INFO  : Successfully done setting XSCT server connection channel  
+03:58:53 INFO  : Registering command handlers for Vitis TCF services
+03:59:14 INFO  : Successfully done setting workspace for the tool. 
+03:59:14 INFO  : Successfully done query RDI_DATADIR 
+04:08:23 INFO  : Checking for BSP changes to sync application flags for project 'microBase'...
+04:13:08 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+04:13:41 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+04:14:37 INFO  : Launching XSCT server: xsct -n  -interactive /media/cliff/procom/verilog/microBase/microBase.vitis/temp_xsdb_launch_script.tcl
+04:14:47 INFO  : Registering command handlers for Vitis TCF services
+04:14:48 INFO  : XSCT server has started successfully.
+04:14:48 INFO  : Successfully done setting XSCT server connection channel  
+04:14:49 INFO  : plnx-install-location is set to ''
+04:14:49 INFO  : Successfully done setting workspace for the tool. 
+04:14:49 INFO  : Successfully done query RDI_DATADIR 
+04:15:23 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+04:17:28 INFO  : Launching XSCT server: xsct -n  -interactive /media/cliff/procom/verilog/microBase/microBase.vitis/temp_xsdb_launch_script.tcl
+04:17:39 INFO  : XSCT server has started successfully.
+04:17:39 INFO  : Successfully done setting XSCT server connection channel  
+04:17:39 INFO  : plnx-install-location is set to ''
+04:17:39 INFO  : Registering command handlers for Vitis TCF services
+04:17:40 INFO  : Successfully done setting workspace for the tool. 
+04:17:40 INFO  : Successfully done query RDI_DATADIR 
+04:21:27 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+04:22:14 INFO  : Checking for BSP changes to sync application flags for project 'microBase'...
+04:23:12 INFO  : Checking for BSP changes to sync application flags for project 'microBase'...
+04:24:35 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+15:51:35 INFO  : Launching XSCT server: xsct -n  -interactive /media/cliff/procom/verilog/microBase/microBase.vitis/temp_xsdb_launch_script.tcl
+15:51:47 INFO  : XSCT server has started successfully.
+15:51:47 INFO  : plnx-install-location is set to ''
+15:51:47 INFO  : Successfully done setting XSCT server connection channel  
+15:51:47 INFO  : Successfully done setting workspace for the tool. 
+15:51:51 INFO  : Registering command handlers for Vitis TCF services
+15:52:22 INFO  : Successfully done query RDI_DATADIR 
+17:03:24 INFO  : Launching XSCT server: xsct -n  -interactive /media/cliff/procom/verilog/microBase/microBase.vitis/temp_xsdb_launch_script.tcl
+17:03:30 INFO  : Registering command handlers for Vitis TCF services
+17:03:31 INFO  : XSCT server has started successfully.
+17:03:31 INFO  : Successfully done setting XSCT server connection channel  
+17:03:31 INFO  : plnx-install-location is set to ''
+17:03:31 INFO  : Successfully done setting workspace for the tool. 
+17:03:31 INFO  : Successfully done query RDI_DATADIR 
+17:13:04 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+17:17:13 INFO  : Connected to target on host 'localhost' and port '3122'.
+17:20:13 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+17:22:14 INFO  : Launching XSCT server: xsct -n  -interactive /media/cliff/procom/verilog/microBase/microBase.vitis/temp_xsdb_launch_script.tcl
+17:22:20 INFO  : Registering command handlers for Vitis TCF services
+17:22:21 INFO  : XSCT server has started successfully.
+17:22:21 INFO  : plnx-install-location is set to ''
+17:22:21 INFO  : Successfully done setting XSCT server connection channel  
+17:22:21 INFO  : Successfully done setting workspace for the tool. 
+17:22:21 INFO  : Successfully done query RDI_DATADIR 
+17:22:46 WARN  : Couldn't find target with name: jkl
+17:23:53 INFO  : Checking for BSP changes to sync application flags for project 'microBase'...
+17:24:54 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+17:25:42 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+17:26:07 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+17:28:48 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+17:29:32 INFO  : Bit file '/media/cliff/procom/verilog/microBase/microBase.vitis/microBase/_ide/bitstream/download.bit' is generated.
+17:29:32 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+17:29:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+17:29:48 INFO  : FPGA configured successfully with bitstream "/media/cliff/procom/verilog/microBase/microBase.vitis/microBase/_ide/bitstream/download.bit"
+17:31:30 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+17:34:35 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+17:34:35 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+17:34:35 INFO  : 'jtag frequency' command is executed.
+17:34:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+17:34:51 INFO  : FPGA configured successfully with bitstream "/media/cliff/procom/verilog/microBase/microBase.vitis/microBase/_ide/bitstream/download.bit"
+17:34:52 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:34:52 INFO  : Context for processor 'microblaze_0' is selected.
+17:34:52 INFO  : System reset is completed.
+17:34:55 INFO  : 'after 3000' command is executed.
+17:34:55 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file /media/cliff/procom/verilog/microBase/microBase.vitis/microBase/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+----------------End of Script----------------
+
+17:34:56 INFO  : Memory regions updated for context PA
+17:34:56 INFO  : Memory regions updated for context PA
+17:34:56 INFO  : Launch script is exported to file '/media/cliff/procom/verilog/microBase/microBase.vitis/.sdk/launch_scripts/single_application_debug/systemdebugger_microbase_system_standalone.tcl'
+17:37:02 INFO  : Checking for BSP changes to sync application flags for project 'microBase'...
+17:37:09 INFO  : Disconnected from the channel tcfchan#7.
+17:37:10 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+17:37:11 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+17:37:11 INFO  : 'jtag frequency' command is executed.
+17:37:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+17:37:35 INFO  : FPGA configured successfully with bitstream "/media/cliff/procom/verilog/microBase/microBase.vitis/microBase/_ide/bitstream/download.bit"
+17:37:35 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:37:35 INFO  : Context for processor 'microblaze_0' is selected.
+17:37:35 INFO  : System reset is completed.
+17:37:38 INFO  : 'after 3000' command is executed.
+17:37:38 INFO  : Context for processor 'microblaze_0' is selected.
+17:37:39 INFO  : The application '/media/cliff/procom/verilog/microBase/microBase.vitis/microBase/Debug/microBase.elf' is downloaded to processor 'microblaze_0'.
+17:37:39 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file /media/cliff/procom/verilog/microBase/microBase.vitis/microBase/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow /media/cliff/procom/verilog/microBase/microBase.vitis/microBase/Debug/microBase.elf
+----------------End of Script----------------
+
+17:37:39 INFO  : Memory regions updated for context PA
+17:37:39 INFO  : Memory regions updated for context PA
+17:37:40 INFO  : Context for processor 'microblaze_0' is selected.
+17:37:40 INFO  : 'con' command is executed.
+17:37:40 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+17:37:40 INFO  : Launch script is exported to file '/media/cliff/procom/verilog/microBase/microBase.vitis/.sdk/launch_scripts/single_application_debug/systemdebugger_microbase_system_standalone.tcl'
+17:39:04 INFO  : Disconnected from the channel tcfchan#8.
+17:39:05 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+17:39:05 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+17:39:05 INFO  : 'jtag frequency' command is executed.
+17:39:06 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+17:39:21 INFO  : FPGA configured successfully with bitstream "/media/cliff/procom/verilog/microBase/microBase.vitis/microBase/_ide/bitstream/download.bit"
+17:39:22 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+17:39:22 INFO  : Context for processor 'microblaze_0' is selected.
+17:39:22 INFO  : System reset is completed.
+17:39:25 INFO  : 'after 3000' command is executed.
+17:39:25 INFO  : Context for processor 'microblaze_0' is selected.
+17:39:26 INFO  : The application '/media/cliff/procom/verilog/microBase/microBase.vitis/microBase/Debug/microBase.elf' is downloaded to processor 'microblaze_0'.
+17:39:26 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0
+fpga -file /media/cliff/procom/verilog/microBase/microBase.vitis/microBase/_ide/bitstream/download.bit
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow /media/cliff/procom/verilog/microBase/microBase.vitis/microBase/Debug/microBase.elf
+----------------End of Script----------------
+
+17:39:26 INFO  : Memory regions updated for context PA
+17:39:26 INFO  : Memory regions updated for context PA
+17:39:26 INFO  : Context for processor 'microblaze_0' is selected.
+17:39:26 INFO  : 'con' command is executed.
+17:39:26 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+17:39:26 INFO  : Launch script is exported to file '/media/cliff/procom/verilog/microBase/microBase.vitis/.sdk/launch_scripts/single_application_debug/systemdebugger_microbase_system_standalone.tcl'
+17:47:59 INFO  : Disconnected from the channel tcfchan#9.
+11:22:31 INFO  : Launching XSCT server: xsct -n  -interactive /media/cliff/procom/verilog/microBase/microBase.vitis/temp_xsdb_launch_script.tcl
+11:22:46 INFO  : XSCT server has started successfully.
+11:22:46 INFO  : Successfully done setting XSCT server connection channel  
+11:22:46 INFO  : plnx-install-location is set to ''
+11:22:46 INFO  : Successfully done setting workspace for the tool. 
+11:22:51 INFO  : Registering command handlers for Vitis TCF services
+11:23:30 INFO  : Successfully done query RDI_DATADIR 
+11:39:49 INFO  : Checking for BSP changes to sync application flags for project 'microBase'...
+11:40:40 INFO  : Checking for BSP changes to sync application flags for project 'microBase'...
+11:40:53 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+11:41:33 INFO  : Bit file '/media/cliff/procom/verilog/microBase/microBase.vitis/microBase/_ide/bitstream/download.bit' is generated.
+11:41:33 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+11:41:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+11:41:49 INFO  : FPGA configured successfully with bitstream "/media/cliff/procom/verilog/microBase/microBase.vitis/microBase/_ide/bitstream/download.bit"
+11:47:13 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+11:47:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+11:47:25 INFO  : 'fpga -state' command is executed.
+11:47:26 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+11:47:27 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+11:47:27 INFO  : 'jtag frequency' command is executed.
+11:47:27 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+11:47:27 INFO  : Context for processor 'microblaze_0' is selected.
+11:47:27 INFO  : System reset is completed.
+11:47:30 INFO  : 'after 3000' command is executed.
+11:47:30 INFO  : Context for processor 'microblaze_0' is selected.
+11:47:31 INFO  : The application '/media/cliff/procom/verilog/microBase/microBase.vitis/microBase/Debug/microBase.elf' is downloaded to processor 'microblaze_0'.
+11:47:31 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow /media/cliff/procom/verilog/microBase/microBase.vitis/microBase/Debug/microBase.elf
+----------------End of Script----------------
+
+11:47:31 INFO  : Memory regions updated for context PA
+11:47:31 INFO  : Memory regions updated for context PA
+11:47:32 INFO  : Context for processor 'microblaze_0' is selected.
+11:47:32 INFO  : 'con' command is executed.
+11:47:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+11:47:32 INFO  : Launch script is exported to file '/media/cliff/procom/verilog/microBase/microBase.vitis/.sdk/launch_scripts/single_application_debug/systemdebugger_microbase_system_standalone.tcl'
+11:49:31 INFO  : Disconnected from the channel tcfchan#2.
+11:49:59 INFO  : Successfully done sdx_reload_mss "/media/cliff/procom/verilog/microBase/microBase.vitis/hwBlk_wrapper/microblaze_0/standalone_domain/bsp/system.mss"
+11:50:44 INFO  : (SwPlatform) Successfully done update_mss 
+11:50:44 INFO  : No changes in MSS file content so sources will not be generated.
+11:56:48 INFO  : Checking for BSP changes to sync application flags for project 'microBase'...
+11:58:24 INFO  : Bit file '/media/cliff/procom/verilog/microBase/microBase.vitis/microBase/_ide/bitstream/download.bit' is generated.
+11:58:24 INFO  : Connected to target on host '172.16.0.163' and port '3122'.
+11:58:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+11:58:40 INFO  : FPGA configured successfully with bitstream "/media/cliff/procom/verilog/microBase/microBase.vitis/microBase/_ide/bitstream/download.bit"
+12:06:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A" && level==0} -index 0' command is executed.
+12:06:30 INFO  : 'fpga -state' command is executed.
+12:06:31 INFO  : Connected through redirection to target on host '172.16.0.163' and port '3122'.
+12:06:31 INFO  : Jtag cable 'Digilent JTAG-SMT1 210203339927A' is selected.
+12:06:31 INFO  : 'jtag frequency' command is executed.
+12:06:31 INFO  : 'configparams mdm-detect-bscan-mask 2' command is executed.
+12:06:32 INFO  : Context for processor 'microblaze_0' is selected.
+12:06:32 INFO  : System reset is completed.
+12:06:35 INFO  : 'after 3000' command is executed.
+12:06:35 INFO  : Context for processor 'microblaze_0' is selected.
+12:06:36 INFO  : The application '/media/cliff/procom/verilog/microBase/microBase.vitis/microBase/Debug/microBase.elf' is downloaded to processor 'microblaze_0'.
+12:06:36 INFO  : ----------------XSDB Script----------------
+connect -path [list tcp::1534 tcp:172.16.0.163:3122]
+configparams mdm-detect-bscan-mask 2
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+rst -system
+after 3000
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+dow /media/cliff/procom/verilog/microBase/microBase.vitis/microBase/Debug/microBase.elf
+----------------End of Script----------------
+
+12:06:37 INFO  : Memory regions updated for context PA
+12:06:37 INFO  : Memory regions updated for context PA
+12:06:37 INFO  : Context for processor 'microblaze_0' is selected.
+12:06:37 INFO  : 'con' command is executed.
+12:06:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*microblaze*#0" && bscan=="USER2"  && jtag_cable_name =~ "Digilent JTAG-SMT1 210203339927A"} -index 0
+con
+----------------End of Script----------------
+
+12:06:37 INFO  : Launch script is exported to file '/media/cliff/procom/verilog/microBase/microBase.vitis/.sdk/launch_scripts/single_application_debug/systemdebugger_microbase_system_standalone.tcl'
+12:11:14 INFO  : Disconnected from the channel tcfchan#3.

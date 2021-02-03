@@ -1,0 +1,6 @@
+2021-02-03T11:39:52.961537121171255-11:39:52 **** Incremental Build of configuration Debug for project microBase_system ****
+233235237-make all 
+233235237-Skipping SD card image generation. Reason: The system project only has applications for microblaze processors.
+121171255-
+11:39:53 Build Finished (took 239ms)
+
