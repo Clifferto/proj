@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date             : Tue Feb  2 03:19:18 2021
+| Date             : Wed Feb  3 13:04:52 2021
 | Host             : huaira running 64-bit Linux Mint 20
 | Command          : report_power -file hwBlk_wrapper_power_routed.rpt -pb hwBlk_wrapper_power_summary_routed.pb -rpx hwBlk_wrapper_power_routed.rpx
 | Design           : hwBlk_wrapper
@@ -52,12 +52,12 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.019 |        8 |       --- |             --- |
-| Slice Logic              |     0.006 |     7751 |       --- |             --- |
-|   LUT as Logic           |     0.004 |     2561 |    203800 |            1.26 |
+| Clocks                   |     0.018 |        8 |       --- |             --- |
+| Slice Logic              |     0.006 |     7739 |       --- |             --- |
+|   LUT as Logic           |     0.004 |     2554 |    203800 |            1.25 |
 |   LUT as Distributed RAM |    <0.001 |      120 |     64000 |            0.19 |
 |   CARRY4                 |    <0.001 |       98 |     50950 |            0.19 |
-|   Register               |    <0.001 |     3488 |    407600 |            0.86 |
+|   Register               |    <0.001 |     3484 |    407600 |            0.85 |
 |   F7/F8 Muxes            |    <0.001 |      111 |    203800 |            0.05 |
 |   LUT as Shift Register  |    <0.001 |       74 |     64000 |            0.12 |
 |   Others                 |    <0.001 |      604 |       --- |             --- |
@@ -76,7 +76,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.102 |       0.033 |      0.069 |
+| Vccint    |       1.000 |     0.101 |       0.033 |      0.069 |
 | Vccaux    |       1.800 |     0.089 |       0.061 |      0.028 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.001 |       0.000 |      0.001 |
@@ -155,7 +155,7 @@ Table of Contents
 |   dbg_hub                     |     0.003 |
 |     inst                      |     0.003 |
 |       BSCANID.u_xsdbm_id      |     0.003 |
-|   hwBlk_i                     |     0.140 |
+|   hwBlk_i                     |     0.139 |
 |     axi_gpio_0                |     0.002 |
 |       U0                      |     0.002 |
 |     axi_timer_0               |     0.004 |

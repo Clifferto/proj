@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="/home/becario/ethernet/microBase/microBase.xpr">
+<Project Version="7" Minor="44" Path="/home/becario/ethernet/proj/microBase/microBase.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="94771b9cfd554e99a2ec77839dd7ecdb"/>
@@ -65,14 +65,29 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="hwBlk.bd" FileRelPathName="ip/hwBlk_dlmb_bram_if_cntlr_1/hwBlk_dlmb_bram_if_cntlr_1.xci">
-          <Proxy FileSetName="hwBlk_dlmb_bram_if_cntlr_1"/>
+        <CompFileExtendedInfo CompFileName="hwBlk.bd" FileRelPathName="ip/hwBlk_axi_uartlite_0_1/hwBlk_axi_uartlite_0_1.xci">
+          <Proxy FileSetName="hwBlk_axi_uartlite_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="hwBlk.bd" FileRelPathName="ip/hwBlk_axi_timer_0_0/hwBlk_axi_timer_0_0.xci">
+          <Proxy FileSetName="hwBlk_axi_timer_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="hwBlk.bd" FileRelPathName="ip/hwBlk_microblaze_0_0/hwBlk_microblaze_0_0.xci">
+          <Proxy FileSetName="hwBlk_microblaze_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="hwBlk.bd" FileRelPathName="ip/hwBlk_vio_0_1/hwBlk_vio_0_1.xci">
+          <Proxy FileSetName="hwBlk_vio_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="hwBlk.bd" FileRelPathName="ip/hwBlk_axi_gpio_0_1/hwBlk_axi_gpio_0_1.xci">
+          <Proxy FileSetName="hwBlk_axi_gpio_0_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="hwBlk.bd" FileRelPathName="ip/hwBlk_dlmb_v10_1/hwBlk_dlmb_v10_1.xci">
           <Proxy FileSetName="hwBlk_dlmb_v10_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="hwBlk.bd" FileRelPathName="ip/hwBlk_ilmb_v10_1/hwBlk_ilmb_v10_1.xci">
           <Proxy FileSetName="hwBlk_ilmb_v10_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="hwBlk.bd" FileRelPathName="ip/hwBlk_dlmb_bram_if_cntlr_1/hwBlk_dlmb_bram_if_cntlr_1.xci">
+          <Proxy FileSetName="hwBlk_dlmb_bram_if_cntlr_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="hwBlk.bd" FileRelPathName="ip/hwBlk_ilmb_bram_if_cntlr_1/hwBlk_ilmb_bram_if_cntlr_1.xci">
           <Proxy FileSetName="hwBlk_ilmb_bram_if_cntlr_1"/>
@@ -86,29 +101,14 @@
         <CompFileExtendedInfo CompFileName="hwBlk.bd" FileRelPathName="ip/hwBlk_microblaze_0_axi_intc_1/hwBlk_microblaze_0_axi_intc_1.xci">
           <Proxy FileSetName="hwBlk_microblaze_0_axi_intc_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="hwBlk.bd" FileRelPathName="ip/hwBlk_clk_wiz_1_1/hwBlk_clk_wiz_1_1.xci">
-          <Proxy FileSetName="hwBlk_clk_wiz_1_1"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="hwBlk.bd" FileRelPathName="ip/hwBlk_mdm_1_1/hwBlk_mdm_1_1.xci">
           <Proxy FileSetName="hwBlk_mdm_1_1"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="hwBlk.bd" FileRelPathName="ip/hwBlk_axi_uartlite_0_1/hwBlk_axi_uartlite_0_1.xci">
-          <Proxy FileSetName="hwBlk_axi_uartlite_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="hwBlk.bd" FileRelPathName="ip/hwBlk_axi_timer_0_0/hwBlk_axi_timer_0_0.xci">
-          <Proxy FileSetName="hwBlk_axi_timer_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="hwBlk.bd" FileRelPathName="ip/hwBlk_microblaze_0_0/hwBlk_microblaze_0_0.xci">
-          <Proxy FileSetName="hwBlk_microblaze_0_0"/>
+        <CompFileExtendedInfo CompFileName="hwBlk.bd" FileRelPathName="ip/hwBlk_clk_wiz_1_1/hwBlk_clk_wiz_1_1.xci">
+          <Proxy FileSetName="hwBlk_clk_wiz_1_1"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="hwBlk.bd" FileRelPathName="ip/hwBlk_rst_clk_wiz_1_100M_1/hwBlk_rst_clk_wiz_1_100M_1.xci">
           <Proxy FileSetName="hwBlk_rst_clk_wiz_1_100M_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="hwBlk.bd" FileRelPathName="ip/hwBlk_axi_gpio_0_1/hwBlk_axi_gpio_0_1.xci">
-          <Proxy FileSetName="hwBlk_axi_gpio_0_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="hwBlk.bd" FileRelPathName="ip/hwBlk_vio_0_1/hwBlk_vio_0_1.xci">
-          <Proxy FileSetName="hwBlk_vio_0_1"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/hwBlk/hdl/hwBlk_wrapper.v">
@@ -277,9 +277,7 @@
     </Run>
     <Run Id="hwBlk_microblaze_0_0_synth_1" Type="Ft3:Synth" SrcSet="hwBlk_microblaze_0_0" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_microblaze_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hwBlk_microblaze_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -289,9 +287,7 @@
     </Run>
     <Run Id="hwBlk_axi_timer_0_0_synth_1" Type="Ft3:Synth" SrcSet="hwBlk_axi_timer_0_0" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_axi_timer_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hwBlk_axi_timer_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -301,9 +297,7 @@
     </Run>
     <Run Id="hwBlk_axi_uartlite_0_1_synth_1" Type="Ft3:Synth" SrcSet="hwBlk_axi_uartlite_0_1" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_axi_uartlite_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hwBlk_axi_uartlite_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -313,9 +307,7 @@
     </Run>
     <Run Id="hwBlk_axi_gpio_0_1_synth_1" Type="Ft3:Synth" SrcSet="hwBlk_axi_gpio_0_1" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_axi_gpio_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hwBlk_axi_gpio_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -325,9 +317,7 @@
     </Run>
     <Run Id="hwBlk_vio_0_1_synth_1" Type="Ft3:Synth" SrcSet="hwBlk_vio_0_1" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_vio_0_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hwBlk_vio_0_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -337,9 +327,7 @@
     </Run>
     <Run Id="hwBlk_dlmb_v10_1_synth_1" Type="Ft3:Synth" SrcSet="hwBlk_dlmb_v10_1" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_dlmb_v10_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hwBlk_dlmb_v10_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -349,9 +337,7 @@
     </Run>
     <Run Id="hwBlk_ilmb_v10_1_synth_1" Type="Ft3:Synth" SrcSet="hwBlk_ilmb_v10_1" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_ilmb_v10_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hwBlk_ilmb_v10_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -361,9 +347,7 @@
     </Run>
     <Run Id="hwBlk_dlmb_bram_if_cntlr_1_synth_1" Type="Ft3:Synth" SrcSet="hwBlk_dlmb_bram_if_cntlr_1" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_dlmb_bram_if_cntlr_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hwBlk_dlmb_bram_if_cntlr_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -373,9 +357,7 @@
     </Run>
     <Run Id="hwBlk_ilmb_bram_if_cntlr_1_synth_1" Type="Ft3:Synth" SrcSet="hwBlk_ilmb_bram_if_cntlr_1" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_ilmb_bram_if_cntlr_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hwBlk_ilmb_bram_if_cntlr_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -385,9 +367,7 @@
     </Run>
     <Run Id="hwBlk_lmb_bram_1_synth_1" Type="Ft3:Synth" SrcSet="hwBlk_lmb_bram_1" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_lmb_bram_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hwBlk_lmb_bram_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -397,9 +377,7 @@
     </Run>
     <Run Id="hwBlk_xbar_1_synth_1" Type="Ft3:Synth" SrcSet="hwBlk_xbar_1" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_xbar_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hwBlk_xbar_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -409,9 +387,7 @@
     </Run>
     <Run Id="hwBlk_microblaze_0_axi_intc_1_synth_1" Type="Ft3:Synth" SrcSet="hwBlk_microblaze_0_axi_intc_1" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_microblaze_0_axi_intc_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hwBlk_microblaze_0_axi_intc_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -421,9 +397,7 @@
     </Run>
     <Run Id="hwBlk_mdm_1_1_synth_1" Type="Ft3:Synth" SrcSet="hwBlk_mdm_1_1" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_mdm_1_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hwBlk_mdm_1_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -433,9 +407,7 @@
     </Run>
     <Run Id="hwBlk_clk_wiz_1_1_synth_1" Type="Ft3:Synth" SrcSet="hwBlk_clk_wiz_1_1" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_clk_wiz_1_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hwBlk_clk_wiz_1_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -445,9 +417,7 @@
     </Run>
     <Run Id="hwBlk_rst_clk_wiz_1_100M_1_synth_1" Type="Ft3:Synth" SrcSet="hwBlk_rst_clk_wiz_1_100M_1" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_rst_clk_wiz_1_100M_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/hwBlk_rst_clk_wiz_1_100M_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
         <Step Id="synth_design"/>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
@@ -475,9 +445,7 @@
     </Run>
     <Run Id="hwBlk_microblaze_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_microblaze_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hwBlk_microblaze_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -494,9 +462,7 @@
     </Run>
     <Run Id="hwBlk_axi_timer_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_axi_timer_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hwBlk_axi_timer_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -513,9 +479,7 @@
     </Run>
     <Run Id="hwBlk_axi_uartlite_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_axi_uartlite_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hwBlk_axi_uartlite_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -532,9 +496,7 @@
     </Run>
     <Run Id="hwBlk_axi_gpio_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_axi_gpio_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hwBlk_axi_gpio_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -551,9 +513,7 @@
     </Run>
     <Run Id="hwBlk_vio_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_vio_0_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hwBlk_vio_0_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -570,9 +530,7 @@
     </Run>
     <Run Id="hwBlk_dlmb_v10_1_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_dlmb_v10_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hwBlk_dlmb_v10_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -589,9 +547,7 @@
     </Run>
     <Run Id="hwBlk_ilmb_v10_1_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_ilmb_v10_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hwBlk_ilmb_v10_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -608,9 +564,7 @@
     </Run>
     <Run Id="hwBlk_dlmb_bram_if_cntlr_1_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_dlmb_bram_if_cntlr_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hwBlk_dlmb_bram_if_cntlr_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -627,9 +581,7 @@
     </Run>
     <Run Id="hwBlk_ilmb_bram_if_cntlr_1_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_ilmb_bram_if_cntlr_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hwBlk_ilmb_bram_if_cntlr_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -646,9 +598,7 @@
     </Run>
     <Run Id="hwBlk_lmb_bram_1_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_lmb_bram_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hwBlk_lmb_bram_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -665,9 +615,7 @@
     </Run>
     <Run Id="hwBlk_xbar_1_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_xbar_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hwBlk_xbar_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -684,9 +632,7 @@
     </Run>
     <Run Id="hwBlk_microblaze_0_axi_intc_1_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_microblaze_0_axi_intc_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hwBlk_microblaze_0_axi_intc_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -703,9 +649,7 @@
     </Run>
     <Run Id="hwBlk_mdm_1_1_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_mdm_1_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hwBlk_mdm_1_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -722,9 +666,7 @@
     </Run>
     <Run Id="hwBlk_clk_wiz_1_1_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_clk_wiz_1_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hwBlk_clk_wiz_1_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>
@@ -741,9 +683,7 @@
     </Run>
     <Run Id="hwBlk_rst_clk_wiz_1_100M_1_impl_1" Type="Ft2:EntireDesign" Part="xc7k325tffg900-2" ConstrsSet="hwBlk_rst_clk_wiz_1_100M_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="hwBlk_rst_clk_wiz_1_100M_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
         <Step Id="init_design"/>
         <Step Id="opt_design"/>
         <Step Id="power_opt_design"/>

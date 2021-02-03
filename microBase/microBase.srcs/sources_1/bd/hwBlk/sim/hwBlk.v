@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-//Date        : Tue Feb  2 03:16:37 2021
+//Date        : Wed Feb  3 13:01:25 2021
 //Host        : huaira running 64-bit Linux Mint 20
 //Command     : generate_target hwBlk.bd
 //Design      : hwBlk
