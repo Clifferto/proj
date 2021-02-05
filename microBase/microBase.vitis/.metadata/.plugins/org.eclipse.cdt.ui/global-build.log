@@ -1,29 +1,294 @@
+15:26:57 **** Build of project hwBlk_wrapper ****
+buildplatform.sh 42273 hwBlk_wrapper  
+XSDB Server Channel: tcfchan#1
+Building the BSP Library for domain  - standalone_domain on processor microblaze_0
+Running Make include in microblaze_0/libsrc/tmrctr_v4_5/src
+
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "C
+OMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections 
+-Wall -Wextra"
+
+Running Make include in microblaze_0/libsrc/uartlite_v3_3/src
+
+make -C microblaze_0/libsrc/uartlite_v3_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" 
+"COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-section
+s -Wall -Wextra"
+
+Running Make include in microblaze_0/libsrc/bram_v4_3/src
+
+make -C microblaze_0/libsrc/bram_v4_3/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+all -Wextra"
+
+Running Make include in microblaze_0/libsrc/standalone_v7_1/src
+
+make -C microblaze_0/libsrc/standalone_v7_1/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar
+" "COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-secti
+ons -Wall -Wextra"
+
+Running Make include in microblaze_0/libsrc/gpio_v4_5/src
+
+make -C microblaze_0/libsrc/gpio_v4_5/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+all -Wextra"
+
+Running Make include in microblaze_0/libsrc/cpu_v2_10/src
+
+make -C microblaze_0/libsrc/cpu_v2_10/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COM
+PILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -W
+all -Wextra"
+
+Running Make include in microblaze_0/libsrc/intc_v3_10/src
+
+make -C microblaze_0/libsrc/intc_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
+MPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -
+Wall -Wextra"
+
+Running Make libs in microblaze_0/libsrc/tmrctr_v4_5/src
+
+make -C microblaze_0/libsrc/tmrctr_v4_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMP
+ILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wa
+ll -Wextra"
+
+Compiling tmrctr
+
+mb-ar: creating ../../../lib/libxil.a
+Running Make libs in microblaze_0/libsrc/uartlite_v3_3/src
+
+make -C microblaze_0/libsrc/uartlite_v3_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "CO
+MPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -
+Wall -Wextra"
+
+Compiling uartlite
+
+Running Make libs in microblaze_0/libsrc/bram_v4_3/src
+
+make -C microblaze_0/libsrc/bram_v4_3/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+ -Wextra"
+
+Compiling bram
+
+Running Make libs in microblaze_0/libsrc/standalone_v7_1/src
+
+make -C microblaze_0/libsrc/standalone_v7_1/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "
+COMPILER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections
+ -Wall -Wextra"
+
+Compiling standalone
+
+microblaze_sleep.c:75:9: note: #pragma message: For the sleep routines, assembly instructions are used
+ #pragma message ("For the sleep routines, assembly instructions are used")
+         ^~~~~~~
+Running Make libs in microblaze_0/libsrc/gpio_v4_5/src
+
+make -C microblaze_0/libsrc/gpio_v4_5/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+ -Wextra"
+
+Compiling gpio
+
+Running Make libs in microblaze_0/libsrc/cpu_v2_10/src
+
+make -C microblaze_0/libsrc/cpu_v2_10/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPIL
+ER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wall
+ -Wextra"
+
+Compiling cpu
+
+Running Make libs in microblaze_0/libsrc/intc_v3_10/src
+
+make -C microblaze_0/libsrc/intc_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=mb-gcc" "ASSEMBLER=mb-as" "ARCHIVER=mb-ar" "COMPI
+LER_FLAGS=  -O2 -c -mcpu=v11.0 -mlittle-endian -mxl-soft-mul" "EXTRA_COMPILER_FLAGS=-g -ffunction-sections -fdata-sections -Wal
+l -Wextra"
+
+Compiling intc
+
+Finished building libraries
+
 Nothing to build in platform 'hwBlk_wrapper'
 
-11:39:50 **** Incremental Build of configuration Debug for project microBase ****
-make all 
-make: Nothing to be done for 'all'.
-11:39:52 **** Incremental Build of configuration Debug for project microBase_system ****
+15:27:39 **** Build of configuration Debug for project micro_system ****
 make all 
 Skipping SD card image generation. Reason: The system project only has applications for microblaze processors.
-11:40:40 **** Incremental Build of configuration Debug for project microBase ****
+15:27:44 **** Build of configuration Debug for project micro ****
 make all 
 Building file: ../src/testperiph.c
 Invoking: MicroBlaze gcc compiler
-mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I/media/cliff/procom/verilog/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
 Finished building: ../src/testperiph.c
  
-Building target: microBase.elf
+Building file: ../src/xgpio_tapp_example.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xgpio_tapp_example.o" -I/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xgpio_tapp_example.d" -MT"src/xgpio_tapp_example.o" -o "src/xgpio_tapp_example.o" "../src/xgpio_tapp_example.c"
+Finished building: ../src/xgpio_tapp_example.c
+ 
+Building file: ../src/xintc_tapp_example.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xintc_tapp_example.o" -I/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xintc_tapp_example.d" -MT"src/xintc_tapp_example.o" -o "src/xintc_tapp_example.o" "../src/xintc_tapp_example.c"
+Finished building: ../src/xintc_tapp_example.c
+ 
+Building file: ../src/xtmrctr_intr_example.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_intr_example.o" -I/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xtmrctr_intr_example.d" -MT"src/xtmrctr_intr_example.o" -o "src/xtmrctr_intr_example.o" "../src/xtmrctr_intr_example.c"
+Finished building: ../src/xtmrctr_intr_example.c
+ 
+Building file: ../src/xtmrctr_selftest_example.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xtmrctr_selftest_example.o" -I/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/xtmrctr_selftest_example.d" -MT"src/xtmrctr_selftest_example.o" -o "src/xtmrctr_selftest_example.o" "../src/xtmrctr_selftest_example.c"
+Finished building: ../src/xtmrctr_selftest_example.c
+ 
+Building target: micro.elf
 Invoking: MicroBlaze gcc linker
-mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/media/cliff/procom/verilog/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "microBase.elf"  ./src/testperiph.o ./src/xgpio_tapp_example.o ./src/xintc_tapp_example.o ./src/xtmrctr_intr_example.o ./src/xtmrctr_selftest_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-Finished building target: microBase.elf
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro.elf"  ./src/testperiph.o ./src/xgpio_tapp_example.o ./src/xintc_tapp_example.o ./src/xtmrctr_intr_example.o ./src/xtmrctr_selftest_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: micro.elf
  
 Invoking: MicroBlaze Print Size
-mb-size microBase.elf  |tee "microBase.elf.size"
+mb-size micro.elf  |tee "micro.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  10424	    348	   3380	  14152	   3748	microBase.elf
-Finished building: microBase.elf.size
+  10424	    348	   3636	  14408	   3848	micro.elf
+Finished building: micro.elf.size
  
-11:56:48 **** Incremental Build of configuration Debug for project microBase ****
+15:32:59 **** Incremental Build of configuration Debug for project micro ****
 make all 
-make: Nothing to be done for 'all'.
+Building file: ../src/testperiph.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+Finished building: ../src/testperiph.c
+ 
+Building target: micro.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro.elf"  ./src/testperiph.o ./src/xgpio_tapp_example.o ./src/xintc_tapp_example.o ./src/xtmrctr_intr_example.o ./src/xtmrctr_selftest_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+/home/cliff/tools/Xilinx/Vitis/2019.2/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld: micro.elf section `.text' will not fit in region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem'
+/home/cliff/tools/Xilinx/Vitis/2019.2/gnu/microblaze/lin/bin/../lib/gcc/microblaze-xilinx-elf/8.2.0/../../../../microblaze-xilinx-elf/bin/ld: region `microblaze_0_local_memory_ilmb_bram_if_cntlr_Mem_microblaze_0_local_memory_dlmb_bram_if_cntlr_Mem' overflowed by 91256 bytes
+collect2: error: ld returned 1 exit status
+make: *** [makefile:38: micro.elf] Error 1
+15:42:42 **** Incremental Build of configuration Debug for project micro ****
+make all 
+Building file: ../src/testperiph.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+Finished building: ../src/testperiph.c
+ 
+Building target: micro.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro.elf"  ./src/testperiph.o ./src/xgpio_tapp_example.o ./src/xintc_tapp_example.o ./src/xtmrctr_intr_example.o ./src/xtmrctr_selftest_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: micro.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size micro.elf  |tee "micro.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11360	    364	   3636	  15360	   3c00	micro.elf
+Finished building: micro.elf.size
+ 
+15:42:59 **** Incremental Build of configuration Debug for project micro ****
+make all 
+Building target: micro.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro.elf"  ./src/testperiph.o ./src/xgpio_tapp_example.o ./src/xintc_tapp_example.o ./src/xtmrctr_intr_example.o ./src/xtmrctr_selftest_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: micro.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size micro.elf  |tee "micro.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11360	    364	   3380	  15104	   3b00	micro.elf
+Finished building: micro.elf.size
+ 
+16:06:53 **** Incremental Build of configuration Debug for project micro ****
+make all 
+Building file: ../src/testperiph.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+Finished building: ../src/testperiph.c
+ 
+Building target: micro.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro.elf"  ./src/testperiph.o ./src/xgpio_tapp_example.o ./src/xintc_tapp_example.o ./src/xtmrctr_intr_example.o ./src/xtmrctr_selftest_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: micro.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size micro.elf  |tee "micro.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11360	    364	   3380	  15104	   3b00	micro.elf
+Finished building: micro.elf.size
+ 
+16:14:09 **** Incremental Build of configuration Debug for project micro ****
+make all 
+Building file: ../src/testperiph.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+Finished building: ../src/testperiph.c
+ 
+Building target: micro.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro.elf"  ./src/testperiph.o ./src/xgpio_tapp_example.o ./src/xintc_tapp_example.o ./src/xtmrctr_intr_example.o ./src/xtmrctr_selftest_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: micro.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size micro.elf  |tee "micro.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11368	    364	   3380	  15112	   3b08	micro.elf
+Finished building: micro.elf.size
+ 
+16:28:35 **** Incremental Build of configuration Debug for project micro ****
+make all 
+Building file: ../src/testperiph.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+Finished building: ../src/testperiph.c
+ 
+Building target: micro.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro.elf"  ./src/testperiph.o ./src/xgpio_tapp_example.o ./src/xintc_tapp_example.o ./src/xtmrctr_intr_example.o ./src/xtmrctr_selftest_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: micro.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size micro.elf  |tee "micro.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11616	    364	   3380	  15360	   3c00	micro.elf
+Finished building: micro.elf.size
+ 
+16:39:19 **** Incremental Build of configuration Debug for project micro ****
+make all 
+Building file: ../src/testperiph.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+../src/testperiph.c: In function 'main':
+../src/testperiph.c:120:11: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+    if(stat&0xFFFF0000==0x55440000) print("OK!\r\n");
+           ^
+Finished building: ../src/testperiph.c
+ 
+Building target: micro.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro.elf"  ./src/testperiph.o ./src/xgpio_tapp_example.o ./src/xintc_tapp_example.o ./src/xtmrctr_intr_example.o ./src/xtmrctr_selftest_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: micro.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size micro.elf  |tee "micro.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11568	    364	   3380	  15312	   3bd0	micro.elf
+Finished building: micro.elf.size
+ 
+17:40:30 **** Incremental Build of configuration Debug for project micro ****
+make all 
+Building file: ../src/testperiph.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+../src/testperiph.c: In function 'main':
+../src/testperiph.c:121:11: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+    if(stat&0xFFFF0000==0x55440000) print("OK!\r\n");
+           ^
+Finished building: ../src/testperiph.c
+ 
+Building target: micro.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro.elf"  ./src/testperiph.o ./src/xgpio_tapp_example.o ./src/xintc_tapp_example.o ./src/xtmrctr_intr_example.o ./src/xtmrctr_selftest_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: micro.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size micro.elf  |tee "micro.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11568	    364	   3380	  15312	   3bd0	micro.elf
+Finished building: micro.elf.size
+ 

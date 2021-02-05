@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="bootloop" key="microBase-microblaze_0-initElf"/>
-	<item value="false" key="microBase-partial_bit"/>
-	<item value="_ide/bitstream/hwBlk_wrapper.mmi" key="microBase-bmmFile"/>
-	<item value="false" key="microBase-skip_rev_check"/>
-	<item value="microBase" key="programfpga.sdxproject"/>
-	<item value="vpn" key="microBase-target"/>
-	<item value="_ide/bitstream/hwBlk_wrapper.bit" key="microBase-bitFile"/>
-	<item value="Digilent JTAG-SMT1 210203339927A/1-xc7k325t" key="microBase-device"/>
+	<item value="_ide/bitstream/hwBlk_wrapper.bit" key="micro-bitFile"/>
+	<item value="vpn" key="micro-target"/>
+	<item value="false" key="micro-partial_bit"/>
+	<item value="_ide/bitstream/hwBlk_wrapper.mmi" key="micro-bmmFile"/>
+	<item value="Digilent JTAG-SMT1 210203339927A/1-xc7k325t" key="micro-device"/>
+	<item value="micro" key="programfpga.sdxproject"/>
+	<item value="false" key="micro-skip_rev_check"/>
+	<item value="bootloop" key="micro-microblaze_0-initElf"/>
 </section>

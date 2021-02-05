@@ -1,0 +1,25 @@
+17:40:30 **** Incremental Build of configuration Debug for project micro ****
+make all 
+Building file: ../src/testperiph.c
+Invoking: MicroBlaze gcc compiler
+mb-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/testperiph.o" -I/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bspinclude/include -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -ffunction-sections -fdata-sections -MMD -MP -MF"src/testperiph.d" -MT"src/testperiph.o" -o "src/testperiph.o" "../src/testperiph.c"
+../src/testperiph.c: In function 'main':
+../src/testperiph.c:121:11: warning: suggest parentheses around comparison in operand of '&' [-Wparentheses]
+    if(stat&0xFFFF0000==0x55440000) print("OK!\r\n");
+           ^
+Finished building: ../src/testperiph.c
+ 
+Building target: micro.elf
+Invoking: MicroBlaze gcc linker
+mb-gcc -Wl,-T -Wl,../src/lscript.ld -L/media/cliff/procom/verilog/proj/microBase/microBase.vitis/hwBlk_wrapper/export/hwBlk_wrapper/sw/hwBlk_wrapper/standalone_domain/bsplib/lib -mlittle-endian -mcpu=v11.0 -mxl-soft-mul -Wl,--no-relax -Wl,--gc-sections -o "micro.elf"  ./src/testperiph.o ./src/xgpio_tapp_example.o ./src/xintc_tapp_example.o ./src/xtmrctr_intr_example.o ./src/xtmrctr_selftest_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+Finished building target: micro.elf
+ 
+Invoking: MicroBlaze Print Size
+mb-size micro.elf  |tee "micro.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  11568	    364	   3380	  15312	   3bd0	micro.elf
+Finished building: micro.elf.size
+ 
+
+17:40:31 Build Finished (took 803ms)
+
