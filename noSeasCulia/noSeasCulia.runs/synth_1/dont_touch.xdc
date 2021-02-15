@@ -4,24 +4,6 @@
 # Block Designs: bd/blkEth/blkEth.bd
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blkEth || ORIG_REF_NAME==blkEth} -quiet] -quiet
 
-# IP: bd/blkEth/ip/blkEth_microblaze_0_0/blkEth_microblaze_0_0.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blkEth_microblaze_0_0 || ORIG_REF_NAME==blkEth_microblaze_0_0} -quiet] -quiet
-
-# IP: bd/blkEth/ip/blkEth_dlmb_v10_6/blkEth_dlmb_v10_6.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blkEth_dlmb_v10_6 || ORIG_REF_NAME==blkEth_dlmb_v10_6} -quiet] -quiet
-
-# IP: bd/blkEth/ip/blkEth_ilmb_v10_6/blkEth_ilmb_v10_6.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blkEth_ilmb_v10_6 || ORIG_REF_NAME==blkEth_ilmb_v10_6} -quiet] -quiet
-
-# IP: bd/blkEth/ip/blkEth_dlmb_bram_if_cntlr_6/blkEth_dlmb_bram_if_cntlr_6.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blkEth_dlmb_bram_if_cntlr_6 || ORIG_REF_NAME==blkEth_dlmb_bram_if_cntlr_6} -quiet] -quiet
-
-# IP: bd/blkEth/ip/blkEth_ilmb_bram_if_cntlr_6/blkEth_ilmb_bram_if_cntlr_6.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blkEth_ilmb_bram_if_cntlr_6 || ORIG_REF_NAME==blkEth_ilmb_bram_if_cntlr_6} -quiet] -quiet
-
-# IP: bd/blkEth/ip/blkEth_lmb_bram_6/blkEth_lmb_bram_6.xci
-set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blkEth_lmb_bram_6 || ORIG_REF_NAME==blkEth_lmb_bram_6} -quiet] -quiet
-
 # IP: bd/blkEth/ip/blkEth_mdm_1_6/blkEth_mdm_1_6.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blkEth_mdm_1_6 || ORIG_REF_NAME==blkEth_mdm_1_6} -quiet] -quiet
 
@@ -51,5 +33,23 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blkEth_axi_ethe
 
 # IP: bd/blkEth/ip/blkEth_xlconcat_0_0/blkEth_xlconcat_0_0.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blkEth_xlconcat_0_0 || ORIG_REF_NAME==blkEth_xlconcat_0_0} -quiet] -quiet
+
+# IP: bd/blkEth/ip/blkEth_microblaze_0_1/blkEth_microblaze_0_1.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blkEth_microblaze_0_1 || ORIG_REF_NAME==blkEth_microblaze_0_1} -quiet] -quiet
+
+# IP: bd/blkEth/ip/blkEth_dlmb_v10_7/blkEth_dlmb_v10_7.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blkEth_dlmb_v10_7 || ORIG_REF_NAME==blkEth_dlmb_v10_7} -quiet] -quiet
+
+# IP: bd/blkEth/ip/blkEth_ilmb_v10_7/blkEth_ilmb_v10_7.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blkEth_ilmb_v10_7 || ORIG_REF_NAME==blkEth_ilmb_v10_7} -quiet] -quiet
+
+# IP: bd/blkEth/ip/blkEth_dlmb_bram_if_cntlr_7/blkEth_dlmb_bram_if_cntlr_7.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blkEth_dlmb_bram_if_cntlr_7 || ORIG_REF_NAME==blkEth_dlmb_bram_if_cntlr_7} -quiet] -quiet
+
+# IP: bd/blkEth/ip/blkEth_ilmb_bram_if_cntlr_7/blkEth_ilmb_bram_if_cntlr_7.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blkEth_ilmb_bram_if_cntlr_7 || ORIG_REF_NAME==blkEth_ilmb_bram_if_cntlr_7} -quiet] -quiet
+
+# IP: bd/blkEth/ip/blkEth_lmb_bram_7/blkEth_lmb_bram_7.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blkEth_lmb_bram_7 || ORIG_REF_NAME==blkEth_lmb_bram_7} -quiet] -quiet
 
 # XDC: bd/blkEth/blkEth_ooc.xdc

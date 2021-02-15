@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1613422800">
+<GenRun Id="synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1613425978">
   <File Type="VDS-TIMING-PB" Name="blkEth_wrapper_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="blkEth_wrapper_timing_summary_synth.rpt"/>
   <File Type="RDS-DCP" Name="blkEth_wrapper.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="blkEth_wrapper_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="blkEth_wrapper_utilization_synth.rpt"/>
+  <File Type="RDS-PROPCONSTRS" Name="blkEth_wrapper_drc_synth.rpt"/>
+  <File Type="RDS-RDS" Name="blkEth_wrapper.vds"/>
   <File Type="REPORTS-TCL" Name="blkEth_wrapper_reports.tcl"/>
   <File Type="PA-TCL" Name="blkEth_wrapper.tcl"/>
-  <File Type="RDS-RDS" Name="blkEth_wrapper.vds"/>
-  <File Type="RDS-PROPCONSTRS" Name="blkEth_wrapper_drc_synth.rpt"/>
-  <File Type="RDS-UTIL" Name="blkEth_wrapper_utilization_synth.rpt"/>
-  <File Type="RDS-UTIL-PB" Name="blkEth_wrapper_utilization_synth.pb"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/bd/blkEth/blkEth.bd">
@@ -50,29 +50,24 @@
     </Config>
   </FileSet>
   <Strategy Version="1" Minor="2">
-    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-      <Desc>Vivado Synthesis Defaults</Desc>
-    </StratHandle>
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
     <Step Id="synth_design"/>
   </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_ilmb_bram_if_cntlr_7"/>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_dlmb_bram_if_cntlr_7"/>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_lmb_bram_7"/>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_microblaze_0_1"/>
   <BlockFileSet Type="BlockSrcs" Name="blkEth_axi_ethernet_0_gtxclk_0"/>
   <BlockFileSet Type="BlockSrcs" Name="blkEth_axi_ethernet_0_fifo_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="blkEth_lmb_bram_6"/>
-  <BlockFileSet Type="BlockSrcs" Name="blkEth_axi_intc_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_26a2_c_shift_ram_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="bd_26a2_mac_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="blkEth_ilmb_v10_6"/>
   <BlockFileSet Type="BlockSrcs" Name="bd_26a2_c_counter_binary_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="bd_26a2_eth_buf_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="blkEth_mdm_1_6"/>
-  <BlockFileSet Type="BlockSrcs" Name="blkEth_dlmb_v10_6"/>
-  <BlockFileSet Type="BlockSrcs" Name="blkEth_mig_7series_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_axi_ethernet_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_axi_intc_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="bd_26a2_util_vector_logic_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="blkEth_axi_uartlite_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="blkEth_microblaze_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="bd_26a2_c_shift_ram_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="blkEth_ilmb_bram_if_cntlr_6"/>
-  <BlockFileSet Type="BlockSrcs" Name="blkEth_dlmb_bram_if_cntlr_6"/>
   <BlockFileSet Type="BlockSrcs" Name="blkEth_rst_mig_7series_0_200M_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="blkEth_axi_smc_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="blkEth_axi_ethernet_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_mig_7series_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_mdm_1_6"/>
 </GenRun>

@@ -17,6 +17,7 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param chipscope.maxJobs 2
 create_project -in_memory -part xc7k325tffg900-2
 
 set_param project.singleFileAddWarning.threshold 0
@@ -33,16 +34,6 @@ set_property ip_output_repo /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/hdl/blkEth_wrapper.v
 add_files /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/blkEth.bd
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_microblaze_0_0/blkEth_microblaze_0_0.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_microblaze_0_0/blkEth_microblaze_0_0_ooc_debug.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_microblaze_0_0/blkEth_microblaze_0_0_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_dlmb_v10_6/blkEth_dlmb_v10_6.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_dlmb_v10_6/blkEth_dlmb_v10_6_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_ilmb_v10_6/blkEth_ilmb_v10_6.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_ilmb_v10_6/blkEth_ilmb_v10_6_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_dlmb_bram_if_cntlr_6/blkEth_dlmb_bram_if_cntlr_6_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_ilmb_bram_if_cntlr_6/blkEth_ilmb_bram_if_cntlr_6_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_lmb_bram_6/blkEth_lmb_bram_6_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_mdm_1_6/blkEth_mdm_1_6.xdc]
 set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_mdm_1_6/blkEth_mdm_1_6_ooc_trace.xdc]
 set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_mig_7series_0_2/blkEth_mig_7series_0_2/user_design/constraints/blkEth_mig_7series_0_2.xdc]
@@ -117,8 +108,18 @@ set_property used_in_implementation false [get_files -all /home/becario/ethernet
 set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_axi_ethernet_0_gtxclk_0/blkEth_axi_ethernet_0_gtxclk_0_board.xdc]
 set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_axi_ethernet_0_gtxclk_0/blkEth_axi_ethernet_0_gtxclk_0.xdc]
 set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_axi_ethernet_0_gtxclk_0/blkEth_axi_ethernet_0_gtxclk_0_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_microblaze_0_1/blkEth_microblaze_0_1.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_microblaze_0_1/blkEth_microblaze_0_1_ooc_debug.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_microblaze_0_1/blkEth_microblaze_0_1_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_dlmb_v10_7/blkEth_dlmb_v10_7.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_dlmb_v10_7/blkEth_dlmb_v10_7_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_ilmb_v10_7/blkEth_ilmb_v10_7.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_ilmb_v10_7/blkEth_ilmb_v10_7_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_dlmb_bram_if_cntlr_7/blkEth_dlmb_bram_if_cntlr_7_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_ilmb_bram_if_cntlr_7/blkEth_ilmb_bram_if_cntlr_7_ooc.xdc]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_lmb_bram_7/blkEth_lmb_bram_7_ooc.xdc]
 set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/blkEth_ooc.xdc]
-set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_microblaze_0_0/data/mb_bootloop_le.elf]
+set_property used_in_implementation false [get_files -all /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_microblaze_0_1/data/mb_bootloop_le.elf]
 
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the

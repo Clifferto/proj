@@ -2,59 +2,11 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="blkEth" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1613422337"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1613422337"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1613422337"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1613422337"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1613425974"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1613425974"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1613425974"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1613425974"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
-      <File Name="ip/blkEth_microblaze_0_0/blkEth_microblaze_0_0.xci" Type="IP">
-        <Instance HierarchyPath="microblaze_0"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/blkEth_dlmb_v10_6/blkEth_dlmb_v10_6.xci" Type="IP">
-        <Instance HierarchyPath="microblaze_0_local_memory/dlmb_v10"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/blkEth_ilmb_v10_6/blkEth_ilmb_v10_6.xci" Type="IP">
-        <Instance HierarchyPath="microblaze_0_local_memory/ilmb_v10"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/blkEth_dlmb_bram_if_cntlr_6/blkEth_dlmb_bram_if_cntlr_6.xci" Type="IP">
-        <Instance HierarchyPath="microblaze_0_local_memory/dlmb_bram_if_cntlr"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/blkEth_ilmb_bram_if_cntlr_6/blkEth_ilmb_bram_if_cntlr_6.xci" Type="IP">
-        <Instance HierarchyPath="microblaze_0_local_memory/ilmb_bram_if_cntlr"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
-      <File Name="ip/blkEth_lmb_bram_6/blkEth_lmb_bram_6.xci" Type="IP">
-        <Instance HierarchyPath="microblaze_0_local_memory/lmb_bram"/>
-        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
-        <Library Name="xil_defaultlib"/>
-        <UsedIn Val="SYNTHESIS"/>
-        <UsedIn Val="IMPLEMENTATION"/>
-        <UsedIn Val="SIMULATION"/>
-      </File>
       <File Name="ip/blkEth_mdm_1_6/blkEth_mdm_1_6.xci" Type="IP">
         <Instance HierarchyPath="mdm_1"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
@@ -144,6 +96,54 @@
       <File Name="sim/blkEth.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
         <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/blkEth_microblaze_0_1/blkEth_microblaze_0_1.xci" Type="IP">
+        <Instance HierarchyPath="microblaze_0"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/blkEth_dlmb_v10_7/blkEth_dlmb_v10_7.xci" Type="IP">
+        <Instance HierarchyPath="microblaze_0_local_memory/dlmb_v10"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/blkEth_ilmb_v10_7/blkEth_ilmb_v10_7.xci" Type="IP">
+        <Instance HierarchyPath="microblaze_0_local_memory/ilmb_v10"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/blkEth_dlmb_bram_if_cntlr_7/blkEth_dlmb_bram_if_cntlr_7.xci" Type="IP">
+        <Instance HierarchyPath="microblaze_0_local_memory/dlmb_bram_if_cntlr"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/blkEth_ilmb_bram_if_cntlr_7/blkEth_ilmb_bram_if_cntlr_7.xci" Type="IP">
+        <Instance HierarchyPath="microblaze_0_local_memory/ilmb_bram_if_cntlr"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/blkEth_lmb_bram_7/blkEth_lmb_bram_7.xci" Type="IP">
+        <Instance HierarchyPath="microblaze_0_local_memory/lmb_bram"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
         <UsedIn Val="SIMULATION"/>
       </File>
       <File Name="blkEth.bmm" Type="BMM">

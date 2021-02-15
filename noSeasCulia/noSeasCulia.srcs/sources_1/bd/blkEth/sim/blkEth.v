@@ -1,7 +1,7 @@
 //Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 //--------------------------------------------------------------------------------
 //Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-//Date        : Mon Feb 15 17:51:47 2021
+//Date        : Mon Feb 15 18:52:46 2021
 //Host        : huaira running 64-bit Linux Mint 20
 //Command     : generate_target blkEth.bd
 //Design      : blkEth
@@ -9,7 +9,7 @@
 //--------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CORE_GENERATION_INFO = "blkEth,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=blkEth,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=17,numReposBlks=16,numNonXlnxBlks=0,numHierBlks=1,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_aeth_cnt=2,da_axi4_cnt=6,da_board_cnt=3,da_mb_cnt=7,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "blkEth.hwdef" *) 
+(* CORE_GENERATION_INFO = "blkEth,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=blkEth,x_ipVersion=1.00.a,x_ipLanguage=VERILOG,numBlks=17,numReposBlks=16,numNonXlnxBlks=0,numHierBlks=1,maxHierDepth=1,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=0,numPkgbdBlks=0,bdsource=USER,da_aeth_cnt=2,da_axi4_cnt=7,da_board_cnt=3,da_mb_cnt=9,synth_mode=OOC_per_IP}" *) (* HW_HANDOFF = "blkEth.hwdef" *) 
 module blkEth
    (ddr3_sdram_addr,
     ddr3_sdram_ba,
@@ -222,6 +222,16 @@ module blkEth
   wire axi_uartlite_0_UART_TxD;
   wire axi_uartlite_0_interrupt;
   wire mdm_1_Debug_SYS_Rst;
+  wire mdm_1_MBDEBUG_0_CAPTURE;
+  wire mdm_1_MBDEBUG_0_CLK;
+  wire mdm_1_MBDEBUG_0_DISABLE;
+  wire [0:7]mdm_1_MBDEBUG_0_REG_EN;
+  wire mdm_1_MBDEBUG_0_RST;
+  wire mdm_1_MBDEBUG_0_SHIFT;
+  wire mdm_1_MBDEBUG_0_TDI;
+  wire mdm_1_MBDEBUG_0_TDO;
+  wire mdm_1_MBDEBUG_0_UPDATE;
+  wire microblaze_0_Clk;
   wire [31:0]microblaze_0_M_AXI_DP_ARADDR;
   wire [2:0]microblaze_0_M_AXI_DP_ARPROT;
   wire microblaze_0_M_AXI_DP_ARREADY;
@@ -241,15 +251,6 @@ module blkEth
   wire microblaze_0_M_AXI_DP_WREADY;
   wire [3:0]microblaze_0_M_AXI_DP_WSTRB;
   wire microblaze_0_M_AXI_DP_WVALID;
-  wire microblaze_0_debug_CAPTURE;
-  wire microblaze_0_debug_CLK;
-  wire microblaze_0_debug_DISABLE;
-  wire [0:7]microblaze_0_debug_REG_EN;
-  wire microblaze_0_debug_RST;
-  wire microblaze_0_debug_SHIFT;
-  wire microblaze_0_debug_TDI;
-  wire microblaze_0_debug_TDO;
-  wire microblaze_0_debug_UPDATE;
   wire [0:31]microblaze_0_dlmb_1_ABUS;
   wire microblaze_0_dlmb_1_ADDRSTROBE;
   wire [0:3]microblaze_0_dlmb_1_BE;
@@ -286,7 +287,6 @@ module blkEth
   wire mig_7series_0_DDR3_WE_N;
   wire mig_7series_0_init_calib_complete;
   wire mig_7series_0_mmcm_locked;
-  wire mig_7series_0_ui_clk;
   wire mig_7series_0_ui_clk_sync_rst;
   wire reset_1;
   wire [0:0]rst_mig_7series_0_200M_bus_struct_reset;
@@ -333,7 +333,7 @@ module blkEth
         .axi_rxs_arstn(axi_ethernet_0_fifo_s2mm_prmry_reset_out_n),
         .axi_txc_arstn(axi_ethernet_0_fifo_mm2s_cntrl_reset_out_n),
         .axi_txd_arstn(axi_ethernet_0_fifo_mm2s_prmry_reset_out_n),
-        .axis_clk(mig_7series_0_ui_clk),
+        .axis_clk(microblaze_0_Clk),
         .gmii_gtx_clk(axi_ethernet_0_gmii_GTX_CLK),
         .gmii_rx_clk(axi_ethernet_0_gmii_RX_CLK),
         .gmii_rx_dv(axi_ethernet_0_gmii_RX_DV),
@@ -357,7 +357,7 @@ module blkEth
         .mdio_mdio_o(axi_ethernet_0_mdio_MDIO_O),
         .mdio_mdio_t(axi_ethernet_0_mdio_MDIO_T),
         .phy_rst_n(axi_ethernet_0_phy_rst_n),
-        .ref_clk(mig_7series_0_ui_clk),
+        .ref_clk(microblaze_0_Clk),
         .s_axi_araddr(axi_smc_M03_AXI_ARADDR),
         .s_axi_arready(axi_smc_M03_AXI_ARREADY),
         .s_axi_arvalid(axi_smc_M03_AXI_ARVALID),
@@ -367,7 +367,7 @@ module blkEth
         .s_axi_bready(axi_smc_M03_AXI_BREADY),
         .s_axi_bresp(axi_smc_M03_AXI_BRESP),
         .s_axi_bvalid(axi_smc_M03_AXI_BVALID),
-        .s_axi_lite_clk(mig_7series_0_ui_clk),
+        .s_axi_lite_clk(microblaze_0_Clk),
         .s_axi_lite_resetn(rst_mig_7series_0_200M_peripheral_aresetn),
         .s_axi_rdata(axi_smc_M03_AXI_RDATA),
         .s_axi_rready(axi_smc_M03_AXI_RREADY),
@@ -407,7 +407,7 @@ module blkEth
         .mm2s_cntrl_reset_out_n(axi_ethernet_0_fifo_mm2s_cntrl_reset_out_n),
         .mm2s_prmry_reset_out_n(axi_ethernet_0_fifo_mm2s_prmry_reset_out_n),
         .s2mm_prmry_reset_out_n(axi_ethernet_0_fifo_s2mm_prmry_reset_out_n),
-        .s_axi_aclk(mig_7series_0_ui_clk),
+        .s_axi_aclk(microblaze_0_Clk),
         .s_axi_araddr(axi_smc_M04_AXI_ARADDR),
         .s_axi_aresetn(rst_mig_7series_0_200M_peripheral_aresetn),
         .s_axi_arready(axi_smc_M04_AXI_ARREADY),
@@ -427,12 +427,12 @@ module blkEth
         .s_axi_wstrb(axi_smc_M04_AXI_WSTRB),
         .s_axi_wvalid(axi_smc_M04_AXI_WVALID));
   blkEth_axi_ethernet_0_gtxclk_0 axi_ethernet_0_gtxclk
-       (.clk_in1(mig_7series_0_ui_clk),
+       (.clk_in1(microblaze_0_Clk),
         .clk_out1(axi_ethernet_0_gtxclk_clk_out1));
   blkEth_axi_intc_0_0 axi_intc_0
        (.intr(xlconcat_0_dout),
         .irq(axi_intc_0_interrupt_INTERRUPT),
-        .s_axi_aclk(mig_7series_0_ui_clk),
+        .s_axi_aclk(microblaze_0_Clk),
         .s_axi_araddr(axi_smc_M02_AXI_ARADDR),
         .s_axi_aresetn(rst_mig_7series_0_200M_peripheral_aresetn),
         .s_axi_arready(axi_smc_M02_AXI_ARREADY),
@@ -572,12 +572,12 @@ module blkEth
         .S00_AXI_wready(microblaze_0_M_AXI_DP_WREADY),
         .S00_AXI_wstrb(microblaze_0_M_AXI_DP_WSTRB),
         .S00_AXI_wvalid(microblaze_0_M_AXI_DP_WVALID),
-        .aclk(mig_7series_0_ui_clk),
+        .aclk(microblaze_0_Clk),
         .aresetn(rst_mig_7series_0_200M_interconnect_aresetn));
   blkEth_axi_uartlite_0_0 axi_uartlite_0
        (.interrupt(axi_uartlite_0_interrupt),
         .rx(axi_uartlite_0_UART_RxD),
-        .s_axi_aclk(mig_7series_0_ui_clk),
+        .s_axi_aclk(microblaze_0_Clk),
         .s_axi_araddr(axi_smc_M01_AXI_ARADDR),
         .s_axi_aresetn(rst_mig_7series_0_200M_peripheral_aresetn),
         .s_axi_arready(axi_smc_M01_AXI_ARREADY),
@@ -598,21 +598,21 @@ module blkEth
         .s_axi_wvalid(axi_smc_M01_AXI_WVALID),
         .tx(axi_uartlite_0_UART_TxD));
   blkEth_mdm_1_6 mdm_1
-       (.Dbg_Capture_0(microblaze_0_debug_CAPTURE),
-        .Dbg_Clk_0(microblaze_0_debug_CLK),
-        .Dbg_Disable_0(microblaze_0_debug_DISABLE),
-        .Dbg_Reg_En_0(microblaze_0_debug_REG_EN),
-        .Dbg_Rst_0(microblaze_0_debug_RST),
-        .Dbg_Shift_0(microblaze_0_debug_SHIFT),
-        .Dbg_TDI_0(microblaze_0_debug_TDI),
-        .Dbg_TDO_0(microblaze_0_debug_TDO),
-        .Dbg_Update_0(microblaze_0_debug_UPDATE),
+       (.Dbg_Capture_0(mdm_1_MBDEBUG_0_CAPTURE),
+        .Dbg_Clk_0(mdm_1_MBDEBUG_0_CLK),
+        .Dbg_Disable_0(mdm_1_MBDEBUG_0_DISABLE),
+        .Dbg_Reg_En_0(mdm_1_MBDEBUG_0_REG_EN),
+        .Dbg_Rst_0(mdm_1_MBDEBUG_0_RST),
+        .Dbg_Shift_0(mdm_1_MBDEBUG_0_SHIFT),
+        .Dbg_TDI_0(mdm_1_MBDEBUG_0_TDI),
+        .Dbg_TDO_0(mdm_1_MBDEBUG_0_TDO),
+        .Dbg_Update_0(mdm_1_MBDEBUG_0_UPDATE),
         .Debug_SYS_Rst(mdm_1_Debug_SYS_Rst));
   (* BMM_INFO_PROCESSOR = "microblaze-le > blkEth microblaze_0_local_memory/dlmb_bram_if_cntlr" *) 
   (* KEEP_HIERARCHY = "yes" *) 
-  blkEth_microblaze_0_0 microblaze_0
+  blkEth_microblaze_0_1 microblaze_0
        (.Byte_Enable(microblaze_0_dlmb_1_BE),
-        .Clk(mig_7series_0_ui_clk),
+        .Clk(microblaze_0_Clk),
         .DCE(microblaze_0_dlmb_1_CE),
         .DReady(microblaze_0_dlmb_1_READY),
         .DUE(microblaze_0_dlmb_1_UE),
@@ -621,15 +621,15 @@ module blkEth
         .Data_Addr(microblaze_0_dlmb_1_ABUS),
         .Data_Read(microblaze_0_dlmb_1_READDBUS),
         .Data_Write(microblaze_0_dlmb_1_WRITEDBUS),
-        .Dbg_Capture(microblaze_0_debug_CAPTURE),
-        .Dbg_Clk(microblaze_0_debug_CLK),
-        .Dbg_Disable(microblaze_0_debug_DISABLE),
-        .Dbg_Reg_En(microblaze_0_debug_REG_EN),
-        .Dbg_Shift(microblaze_0_debug_SHIFT),
-        .Dbg_TDI(microblaze_0_debug_TDI),
-        .Dbg_TDO(microblaze_0_debug_TDO),
-        .Dbg_Update(microblaze_0_debug_UPDATE),
-        .Debug_Rst(microblaze_0_debug_RST),
+        .Dbg_Capture(mdm_1_MBDEBUG_0_CAPTURE),
+        .Dbg_Clk(mdm_1_MBDEBUG_0_CLK),
+        .Dbg_Disable(mdm_1_MBDEBUG_0_DISABLE),
+        .Dbg_Reg_En(mdm_1_MBDEBUG_0_REG_EN),
+        .Dbg_Shift(mdm_1_MBDEBUG_0_SHIFT),
+        .Dbg_TDI(mdm_1_MBDEBUG_0_TDI),
+        .Dbg_TDO(mdm_1_MBDEBUG_0_TDO),
+        .Dbg_Update(mdm_1_MBDEBUG_0_UPDATE),
+        .Debug_Rst(mdm_1_MBDEBUG_0_RST),
         .ICE(microblaze_0_ilmb_1_CE),
         .IFetch(microblaze_0_ilmb_1_READSTROBE),
         .IReady(microblaze_0_ilmb_1_READY),
@@ -682,8 +682,8 @@ module blkEth
         .ILMB_ready(microblaze_0_ilmb_1_READY),
         .ILMB_ue(microblaze_0_ilmb_1_UE),
         .ILMB_wait(microblaze_0_ilmb_1_WAIT),
-        .LMB_Clk(mig_7series_0_ui_clk),
-        .LMB_Rst(rst_mig_7series_0_200M_bus_struct_reset));
+        .LMB_Clk(microblaze_0_Clk),
+        .SYS_Rst(rst_mig_7series_0_200M_bus_struct_reset));
   blkEth_mig_7series_0_2 mig_7series_0
        (.aresetn(rst_mig_7series_0_200M_peripheral_aresetn),
         .ddr3_addr(mig_7series_0_DDR3_ADDR),
@@ -741,7 +741,7 @@ module blkEth
         .sys_clk_n(sys_diff_clock_1_CLK_N),
         .sys_clk_p(sys_diff_clock_1_CLK_P),
         .sys_rst(reset_1),
-        .ui_clk(mig_7series_0_ui_clk),
+        .ui_clk(microblaze_0_Clk),
         .ui_clk_sync_rst(mig_7series_0_ui_clk_sync_rst));
   blkEth_rst_mig_7series_0_200M_1 rst_mig_7series_0_200M
        (.aux_reset_in(1'b1),
@@ -752,7 +752,7 @@ module blkEth
         .mb_debug_sys_rst(mdm_1_Debug_SYS_Rst),
         .mb_reset(rst_mig_7series_0_200M_mb_reset),
         .peripheral_aresetn(rst_mig_7series_0_200M_peripheral_aresetn),
-        .slowest_sync_clk(mig_7series_0_ui_clk));
+        .slowest_sync_clk(microblaze_0_Clk));
   blkEth_xlconcat_0_0 xlconcat_0
        (.In0(mig_7series_0_init_calib_complete),
         .In1(axi_ethernet_0_interrupt),
@@ -783,7 +783,7 @@ module microblaze_0_local_memory_imp_1BH9FLS
     ILMB_ue,
     ILMB_wait,
     LMB_Clk,
-    LMB_Rst);
+    SYS_Rst);
   input [0:31]DLMB_abus;
   input DLMB_addrstrobe;
   input [0:3]DLMB_be;
@@ -804,10 +804,10 @@ module microblaze_0_local_memory_imp_1BH9FLS
   output ILMB_ue;
   output ILMB_wait;
   input LMB_Clk;
-  input LMB_Rst;
+  input SYS_Rst;
 
+  wire SYS_Rst_1;
   wire microblaze_0_Clk;
-  wire microblaze_0_LMB_Rst;
   wire [0:31]microblaze_0_dlmb_ABUS;
   wire microblaze_0_dlmb_ADDRSTROBE;
   wire [0:3]microblaze_0_dlmb_BE;
@@ -874,8 +874,8 @@ module microblaze_0_local_memory_imp_1BH9FLS
   assign ILMB_ready = microblaze_0_ilmb_READY;
   assign ILMB_ue = microblaze_0_ilmb_UE;
   assign ILMB_wait = microblaze_0_ilmb_WAIT;
+  assign SYS_Rst_1 = SYS_Rst;
   assign microblaze_0_Clk = LMB_Clk;
-  assign microblaze_0_LMB_Rst = LMB_Rst;
   assign microblaze_0_dlmb_ABUS = DLMB_abus[0:31];
   assign microblaze_0_dlmb_ADDRSTROBE = DLMB_addrstrobe;
   assign microblaze_0_dlmb_BE = DLMB_be[0:3];
@@ -887,7 +887,7 @@ module microblaze_0_local_memory_imp_1BH9FLS
   assign microblaze_0_ilmb_READSTROBE = ILMB_readstrobe;
   (* BMM_INFO_ADDRESS_SPACE = "byte  0x00000000 32 > blkEth microblaze_0_local_memory/lmb_bram" *) 
   (* KEEP_HIERARCHY = "yes" *) 
-  blkEth_dlmb_bram_if_cntlr_6 dlmb_bram_if_cntlr
+  blkEth_dlmb_bram_if_cntlr_7 dlmb_bram_if_cntlr
        (.BRAM_Addr_A(microblaze_0_dlmb_cntlr_ADDR),
         .BRAM_Clk_A(microblaze_0_dlmb_cntlr_CLK),
         .BRAM_Din_A({microblaze_0_dlmb_cntlr_DOUT[31],microblaze_0_dlmb_cntlr_DOUT[30],microblaze_0_dlmb_cntlr_DOUT[29],microblaze_0_dlmb_cntlr_DOUT[28],microblaze_0_dlmb_cntlr_DOUT[27],microblaze_0_dlmb_cntlr_DOUT[26],microblaze_0_dlmb_cntlr_DOUT[25],microblaze_0_dlmb_cntlr_DOUT[24],microblaze_0_dlmb_cntlr_DOUT[23],microblaze_0_dlmb_cntlr_DOUT[22],microblaze_0_dlmb_cntlr_DOUT[21],microblaze_0_dlmb_cntlr_DOUT[20],microblaze_0_dlmb_cntlr_DOUT[19],microblaze_0_dlmb_cntlr_DOUT[18],microblaze_0_dlmb_cntlr_DOUT[17],microblaze_0_dlmb_cntlr_DOUT[16],microblaze_0_dlmb_cntlr_DOUT[15],microblaze_0_dlmb_cntlr_DOUT[14],microblaze_0_dlmb_cntlr_DOUT[13],microblaze_0_dlmb_cntlr_DOUT[12],microblaze_0_dlmb_cntlr_DOUT[11],microblaze_0_dlmb_cntlr_DOUT[10],microblaze_0_dlmb_cntlr_DOUT[9],microblaze_0_dlmb_cntlr_DOUT[8],microblaze_0_dlmb_cntlr_DOUT[7],microblaze_0_dlmb_cntlr_DOUT[6],microblaze_0_dlmb_cntlr_DOUT[5],microblaze_0_dlmb_cntlr_DOUT[4],microblaze_0_dlmb_cntlr_DOUT[3],microblaze_0_dlmb_cntlr_DOUT[2],microblaze_0_dlmb_cntlr_DOUT[1],microblaze_0_dlmb_cntlr_DOUT[0]}),
@@ -900,7 +900,7 @@ module microblaze_0_local_memory_imp_1BH9FLS
         .LMB_BE(microblaze_0_dlmb_bus_BE),
         .LMB_Clk(microblaze_0_Clk),
         .LMB_ReadStrobe(microblaze_0_dlmb_bus_READSTROBE),
-        .LMB_Rst(microblaze_0_LMB_Rst),
+        .LMB_Rst(SYS_Rst_1),
         .LMB_WriteDBus(microblaze_0_dlmb_bus_WRITEDBUS),
         .LMB_WriteStrobe(microblaze_0_dlmb_bus_WRITESTROBE),
         .Sl_CE(microblaze_0_dlmb_bus_CE),
@@ -908,7 +908,7 @@ module microblaze_0_local_memory_imp_1BH9FLS
         .Sl_Ready(microblaze_0_dlmb_bus_READY),
         .Sl_UE(microblaze_0_dlmb_bus_UE),
         .Sl_Wait(microblaze_0_dlmb_bus_WAIT));
-  blkEth_dlmb_v10_6 dlmb_v10
+  blkEth_dlmb_v10_7 dlmb_v10
        (.LMB_ABus(microblaze_0_dlmb_bus_ABUS),
         .LMB_AddrStrobe(microblaze_0_dlmb_bus_ADDRSTROBE),
         .LMB_BE(microblaze_0_dlmb_bus_BE),
@@ -927,13 +927,13 @@ module microblaze_0_local_memory_imp_1BH9FLS
         .M_DBus(microblaze_0_dlmb_WRITEDBUS),
         .M_ReadStrobe(microblaze_0_dlmb_READSTROBE),
         .M_WriteStrobe(microblaze_0_dlmb_WRITESTROBE),
-        .SYS_Rst(microblaze_0_LMB_Rst),
+        .SYS_Rst(SYS_Rst_1),
         .Sl_CE(microblaze_0_dlmb_bus_CE),
         .Sl_DBus(microblaze_0_dlmb_bus_READDBUS),
         .Sl_Ready(microblaze_0_dlmb_bus_READY),
         .Sl_UE(microblaze_0_dlmb_bus_UE),
         .Sl_Wait(microblaze_0_dlmb_bus_WAIT));
-  blkEth_ilmb_bram_if_cntlr_6 ilmb_bram_if_cntlr
+  blkEth_ilmb_bram_if_cntlr_7 ilmb_bram_if_cntlr
        (.BRAM_Addr_A(microblaze_0_ilmb_cntlr_ADDR),
         .BRAM_Clk_A(microblaze_0_ilmb_cntlr_CLK),
         .BRAM_Din_A({microblaze_0_ilmb_cntlr_DOUT[31],microblaze_0_ilmb_cntlr_DOUT[30],microblaze_0_ilmb_cntlr_DOUT[29],microblaze_0_ilmb_cntlr_DOUT[28],microblaze_0_ilmb_cntlr_DOUT[27],microblaze_0_ilmb_cntlr_DOUT[26],microblaze_0_ilmb_cntlr_DOUT[25],microblaze_0_ilmb_cntlr_DOUT[24],microblaze_0_ilmb_cntlr_DOUT[23],microblaze_0_ilmb_cntlr_DOUT[22],microblaze_0_ilmb_cntlr_DOUT[21],microblaze_0_ilmb_cntlr_DOUT[20],microblaze_0_ilmb_cntlr_DOUT[19],microblaze_0_ilmb_cntlr_DOUT[18],microblaze_0_ilmb_cntlr_DOUT[17],microblaze_0_ilmb_cntlr_DOUT[16],microblaze_0_ilmb_cntlr_DOUT[15],microblaze_0_ilmb_cntlr_DOUT[14],microblaze_0_ilmb_cntlr_DOUT[13],microblaze_0_ilmb_cntlr_DOUT[12],microblaze_0_ilmb_cntlr_DOUT[11],microblaze_0_ilmb_cntlr_DOUT[10],microblaze_0_ilmb_cntlr_DOUT[9],microblaze_0_ilmb_cntlr_DOUT[8],microblaze_0_ilmb_cntlr_DOUT[7],microblaze_0_ilmb_cntlr_DOUT[6],microblaze_0_ilmb_cntlr_DOUT[5],microblaze_0_ilmb_cntlr_DOUT[4],microblaze_0_ilmb_cntlr_DOUT[3],microblaze_0_ilmb_cntlr_DOUT[2],microblaze_0_ilmb_cntlr_DOUT[1],microblaze_0_ilmb_cntlr_DOUT[0]}),
@@ -946,7 +946,7 @@ module microblaze_0_local_memory_imp_1BH9FLS
         .LMB_BE(microblaze_0_ilmb_bus_BE),
         .LMB_Clk(microblaze_0_Clk),
         .LMB_ReadStrobe(microblaze_0_ilmb_bus_READSTROBE),
-        .LMB_Rst(microblaze_0_LMB_Rst),
+        .LMB_Rst(SYS_Rst_1),
         .LMB_WriteDBus(microblaze_0_ilmb_bus_WRITEDBUS),
         .LMB_WriteStrobe(microblaze_0_ilmb_bus_WRITESTROBE),
         .Sl_CE(microblaze_0_ilmb_bus_CE),
@@ -954,7 +954,7 @@ module microblaze_0_local_memory_imp_1BH9FLS
         .Sl_Ready(microblaze_0_ilmb_bus_READY),
         .Sl_UE(microblaze_0_ilmb_bus_UE),
         .Sl_Wait(microblaze_0_ilmb_bus_WAIT));
-  blkEth_ilmb_v10_6 ilmb_v10
+  blkEth_ilmb_v10_7 ilmb_v10
        (.LMB_ABus(microblaze_0_ilmb_bus_ABUS),
         .LMB_AddrStrobe(microblaze_0_ilmb_bus_ADDRSTROBE),
         .LMB_BE(microblaze_0_ilmb_bus_BE),
@@ -973,13 +973,13 @@ module microblaze_0_local_memory_imp_1BH9FLS
         .M_DBus({1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0,1'b0}),
         .M_ReadStrobe(microblaze_0_ilmb_READSTROBE),
         .M_WriteStrobe(1'b0),
-        .SYS_Rst(microblaze_0_LMB_Rst),
+        .SYS_Rst(SYS_Rst_1),
         .Sl_CE(microblaze_0_ilmb_bus_CE),
         .Sl_DBus(microblaze_0_ilmb_bus_READDBUS),
         .Sl_Ready(microblaze_0_ilmb_bus_READY),
         .Sl_UE(microblaze_0_ilmb_bus_UE),
         .Sl_Wait(microblaze_0_ilmb_bus_WAIT));
-  blkEth_lmb_bram_6 lmb_bram
+  blkEth_lmb_bram_7 lmb_bram
        (.addra({microblaze_0_dlmb_cntlr_ADDR[0],microblaze_0_dlmb_cntlr_ADDR[1],microblaze_0_dlmb_cntlr_ADDR[2],microblaze_0_dlmb_cntlr_ADDR[3],microblaze_0_dlmb_cntlr_ADDR[4],microblaze_0_dlmb_cntlr_ADDR[5],microblaze_0_dlmb_cntlr_ADDR[6],microblaze_0_dlmb_cntlr_ADDR[7],microblaze_0_dlmb_cntlr_ADDR[8],microblaze_0_dlmb_cntlr_ADDR[9],microblaze_0_dlmb_cntlr_ADDR[10],microblaze_0_dlmb_cntlr_ADDR[11],microblaze_0_dlmb_cntlr_ADDR[12],microblaze_0_dlmb_cntlr_ADDR[13],microblaze_0_dlmb_cntlr_ADDR[14],microblaze_0_dlmb_cntlr_ADDR[15],microblaze_0_dlmb_cntlr_ADDR[16],microblaze_0_dlmb_cntlr_ADDR[17],microblaze_0_dlmb_cntlr_ADDR[18],microblaze_0_dlmb_cntlr_ADDR[19],microblaze_0_dlmb_cntlr_ADDR[20],microblaze_0_dlmb_cntlr_ADDR[21],microblaze_0_dlmb_cntlr_ADDR[22],microblaze_0_dlmb_cntlr_ADDR[23],microblaze_0_dlmb_cntlr_ADDR[24],microblaze_0_dlmb_cntlr_ADDR[25],microblaze_0_dlmb_cntlr_ADDR[26],microblaze_0_dlmb_cntlr_ADDR[27],microblaze_0_dlmb_cntlr_ADDR[28],microblaze_0_dlmb_cntlr_ADDR[29],microblaze_0_dlmb_cntlr_ADDR[30],microblaze_0_dlmb_cntlr_ADDR[31]}),
         .addrb({microblaze_0_ilmb_cntlr_ADDR[0],microblaze_0_ilmb_cntlr_ADDR[1],microblaze_0_ilmb_cntlr_ADDR[2],microblaze_0_ilmb_cntlr_ADDR[3],microblaze_0_ilmb_cntlr_ADDR[4],microblaze_0_ilmb_cntlr_ADDR[5],microblaze_0_ilmb_cntlr_ADDR[6],microblaze_0_ilmb_cntlr_ADDR[7],microblaze_0_ilmb_cntlr_ADDR[8],microblaze_0_ilmb_cntlr_ADDR[9],microblaze_0_ilmb_cntlr_ADDR[10],microblaze_0_ilmb_cntlr_ADDR[11],microblaze_0_ilmb_cntlr_ADDR[12],microblaze_0_ilmb_cntlr_ADDR[13],microblaze_0_ilmb_cntlr_ADDR[14],microblaze_0_ilmb_cntlr_ADDR[15],microblaze_0_ilmb_cntlr_ADDR[16],microblaze_0_ilmb_cntlr_ADDR[17],microblaze_0_ilmb_cntlr_ADDR[18],microblaze_0_ilmb_cntlr_ADDR[19],microblaze_0_ilmb_cntlr_ADDR[20],microblaze_0_ilmb_cntlr_ADDR[21],microblaze_0_ilmb_cntlr_ADDR[22],microblaze_0_ilmb_cntlr_ADDR[23],microblaze_0_ilmb_cntlr_ADDR[24],microblaze_0_ilmb_cntlr_ADDR[25],microblaze_0_ilmb_cntlr_ADDR[26],microblaze_0_ilmb_cntlr_ADDR[27],microblaze_0_ilmb_cntlr_ADDR[28],microblaze_0_ilmb_cntlr_ADDR[29],microblaze_0_ilmb_cntlr_ADDR[30],microblaze_0_ilmb_cntlr_ADDR[31]}),
         .clka(microblaze_0_dlmb_cntlr_CLK),

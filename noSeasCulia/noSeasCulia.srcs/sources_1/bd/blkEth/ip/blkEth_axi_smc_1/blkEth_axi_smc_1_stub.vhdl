@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
--- Date        : Mon Feb 15 17:59:36 2021
+-- Date        : Mon Feb 15 17:59:24 2021
 -- Host        : huaira running 64-bit Linux Mint 20
--- Command     : write_vhdl -force -mode synth_stub
---               /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_axi_smc_1/blkEth_axi_smc_1_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top blkEth_axi_smc_1 -prefix
+--               blkEth_axi_smc_1_ blkEth_axi_smc_1_stub.vhdl
 -- Design      : blkEth_axi_smc_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7k325tffg900-2
