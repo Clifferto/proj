@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1613422800">
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BITSTR-SYSDEF" Name="blkEth_wrapper.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="blkEth_wrapper.ltx"/>
+  <File Type="BG-BGN" Name="blkEth_wrapper.bgn"/>
+  <File Type="RBD_FILE" Name="blkEth_wrapper.rbd"/>
+  <File Type="BG-DRC" Name="blkEth_wrapper.drc"/>
+  <File Type="NPI_FILE" Name="blkEth_wrapper.npi"/>
+  <File Type="RNPI_FILE" Name="blkEth_wrapper.rnpi"/>
+  <File Type="CFI_FILE" Name="blkEth_wrapper.cfi"/>
+  <File Type="PDI-FILE" Name="blkEth_wrapper.pdi"/>
+  <File Type="BITSTR-MMI" Name="blkEth_wrapper.mmi"/>
+  <File Type="BITSTR-BMM" Name="blkEth_wrapper_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="blkEth_wrapper.nky"/>
+  <File Type="BITSTR-RBT" Name="blkEth_wrapper.rbt"/>
+  <File Type="BITSTR-MSK" Name="blkEth_wrapper.msk"/>
+  <File Type="BG-BIN" Name="blkEth_wrapper.bin"/>
+  <File Type="RCFI_FILE" Name="blkEth_wrapper.rcfi"/>
+  <File Type="BG-BIT" Name="blkEth_wrapper.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="blkEth_wrapper_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="blkEth_wrapper_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="blkEth_wrapper_bus_skew_postroute_physopted.rpt"/>
+  <File Type="RDI-RDI" Name="blkEth_wrapper.vdi"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="blkEth_wrapper_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="blkEth_wrapper_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="blkEth_wrapper_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="blkEth_wrapper_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="blkEth_wrapper_postroute_physopt.dcp"/>
+  <File Type="ROUTE-BUS-SKEW" Name="blkEth_wrapper_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="blkEth_wrapper_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="blkEth_wrapper_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="blkEth_wrapper_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="blkEth_wrapper_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="blkEth_wrapper_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="blkEth_wrapper_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="blkEth_wrapper_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="blkEth_wrapper_power_routed.rpx"/>
+  <File Type="PLACE-UTIL-PB" Name="blkEth_wrapper_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="blkEth_wrapper_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="blkEth_wrapper_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="blkEth_wrapper_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="blkEth_wrapper_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="blkEth_wrapper_pwropt.dcp"/>
+  <File Type="OPT-TIMING" Name="blkEth_wrapper_timing_summary_opted.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="blkEth_wrapper_incremental_reuse_placed.rpt"/>
+  <File Type="OPT-HWDEF" Name="blkEth_wrapper.hwdef"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="blkEth_wrapper_bus_skew_routed.rpx"/>
+  <File Type="REPORTS-TCL" Name="blkEth_wrapper_reports.tcl"/>
+  <File Type="PWROPT-DRC" Name="blkEth_wrapper_drc_pwropted.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="blkEth_wrapper_bus_skew_routed.pb"/>
+  <File Type="PA-TCL" Name="blkEth_wrapper.tcl"/>
+  <File Type="INIT-TIMING" Name="blkEth_wrapper_timing_summary_init.rpt"/>
+  <File Type="PLACE-CTRL" Name="blkEth_wrapper_control_sets_placed.rpt"/>
+  <File Type="PWROPT-TIMING" Name="blkEth_wrapper_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="blkEth_wrapper_incremental_reuse_pre_placed.rpt"/>
+  <File Type="OPT-DCP" Name="blkEth_wrapper_opt.dcp"/>
+  <File Type="OPT-DRC" Name="blkEth_wrapper_drc_opted.rpt"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="blkEth_wrapper_methodology_drc_opted.rpt"/>
+  <File Type="PLACE-TIMING" Name="blkEth_wrapper_timing_summary_placed.rpt"/>
+  <File Type="ROUTE-DRC" Name="blkEth_wrapper_drc_routed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="blkEth_wrapper_postplace_pwropt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="blkEth_wrapper_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="blkEth_wrapper_drc_routed.pb"/>
+  <File Type="PHYSOPT-DCP" Name="blkEth_wrapper_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="blkEth_wrapper_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-TIMING" Name="blkEth_wrapper_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-PWR" Name="blkEth_wrapper_power_routed.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="blkEth_wrapper_routed_error.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="blkEth_wrapper_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-DCP" Name="blkEth_wrapper_routed.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="blkEth_wrapper_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="blkEth_wrapper_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC-RPX" Name="blkEth_wrapper_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="blkEth_wrapper_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="blkEth_wrapper_power_summary_routed.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/blkEth/blkEth.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/blkEth/hdl/blkEth_wrapper.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/blkEth/ip/blkEth_mig_7series_0_2/board.prj">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="ScopedToCell" Val="blkEth_mig_7series_0_2"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="blkEth_wrapper"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+      <Desc>Default settings for Implementation.</Desc>
+    </StratHandle>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design" EnableStepBool="1"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_axi_ethernet_0_gtxclk_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_axi_ethernet_0_fifo_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_lmb_bram_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_axi_intc_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_26a2_mac_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_ilmb_v10_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_26a2_c_counter_binary_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_26a2_eth_buf_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_mdm_1_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_dlmb_v10_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_mig_7series_0_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_26a2_util_vector_logic_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_axi_uartlite_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_microblaze_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="bd_26a2_c_shift_ram_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_ilmb_bram_if_cntlr_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_dlmb_bram_if_cntlr_6"/>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_rst_mig_7series_0_200M_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_axi_smc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="blkEth_axi_ethernet_0_2"/>
+</GenRun>
