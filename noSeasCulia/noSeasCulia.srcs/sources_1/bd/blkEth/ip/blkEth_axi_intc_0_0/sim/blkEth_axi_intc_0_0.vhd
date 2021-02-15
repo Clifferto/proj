@@ -77,7 +77,7 @@ ENTITY blkEth_axi_intc_0_0 IS
     s_axi_rresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
     s_axi_rvalid : OUT STD_LOGIC;
     s_axi_rready : IN STD_LOGIC;
-    intr : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+    intr : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
     irq : OUT STD_LOGIC
   );
 END blkEth_axi_intc_0_0;
@@ -134,7 +134,7 @@ ARCHITECTURE blkEth_axi_intc_0_0_arch OF blkEth_axi_intc_0_0 IS
       s_axi_rresp : OUT STD_LOGIC_VECTOR(1 DOWNTO 0);
       s_axi_rvalid : OUT STD_LOGIC;
       s_axi_rready : IN STD_LOGIC;
-      intr : IN STD_LOGIC_VECTOR(4 DOWNTO 0);
+      intr : IN STD_LOGIC_VECTOR(5 DOWNTO 0);
       processor_clk : IN STD_LOGIC;
       processor_rst : IN STD_LOGIC;
       irq : OUT STD_LOGIC;
@@ -149,7 +149,7 @@ ARCHITECTURE blkEth_axi_intc_0_0_arch OF blkEth_axi_intc_0_0 IS
   ATTRIBUTE X_INTERFACE_PARAMETER : STRING;
   ATTRIBUTE X_INTERFACE_PARAMETER OF irq: SIGNAL IS "XIL_INTERFACENAME interrupt, SENSITIVITY LEVEL_HIGH, LOW_LATENCY 0";
   ATTRIBUTE X_INTERFACE_INFO OF irq: SIGNAL IS "xilinx.com:interface:mbinterrupt:1.0 interrupt INTERRUPT";
-  ATTRIBUTE X_INTERFACE_PARAMETER OF intr: SIGNAL IS "XIL_INTERFACENAME interrupt_input, SENSITIVITY EDGE_RISING:LEVEL_HIGH:EDGE_RISING:LEVEL_HIGH:NULL, PortWidth 5";
+  ATTRIBUTE X_INTERFACE_PARAMETER OF intr: SIGNAL IS "XIL_INTERFACENAME interrupt_input, SENSITIVITY LEVEL_HIGH:EDGE_RISING:LEVEL_HIGH:EDGE_RISING:LEVEL_HIGH:NULL, PortWidth 6";
   ATTRIBUTE X_INTERFACE_INFO OF intr: SIGNAL IS "xilinx.com:signal:interrupt:1.0 interrupt_input INTERRUPT";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_rready: SIGNAL IS "xilinx.com:interface:aximm:1.0 s_axi RREADY";
   ATTRIBUTE X_INTERFACE_INFO OF s_axi_rvalid: SIGNAL IS "xilinx.com:interface:aximm:1.0 s_axi RVALID";
@@ -181,12 +181,12 @@ BEGIN
       C_INSTANCE => "blkEth_axi_intc_0_0",
       C_S_AXI_ADDR_WIDTH => 9,
       C_S_AXI_DATA_WIDTH => 32,
-      C_NUM_INTR_INPUTS => 5,
+      C_NUM_INTR_INPUTS => 6,
       C_NUM_SW_INTR => 0,
-      C_KIND_OF_INTR => X"fffffff5",
+      C_KIND_OF_INTR => X"ffffffd5",
       C_KIND_OF_EDGE => X"FFFFFFFF",
       C_KIND_OF_LVL => X"FFFFFFFF",
-      C_ASYNC_INTR => X"FFFFFFE7",
+      C_ASYNC_INTR => X"FFFFFFC7",
       C_NUM_SYNC_FF => 2,
       C_ADDR_WIDTH => 32,
       C_IVAR_RESET_VALUE => X"0000000000000010",

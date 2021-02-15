@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="blkEth" CanBeSetAsTop="false" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1613425974"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1613425974"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1613425974"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1613425974"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1613430603"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1613430603"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1613430603"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1613430603"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="ip/blkEth_mdm_1_6/blkEth_mdm_1_6.xci" Type="IP">
         <Instance HierarchyPath="mdm_1"/>
@@ -140,6 +140,14 @@
       </File>
       <File Name="ip/blkEth_lmb_bram_7/blkEth_lmb_bram_7.xci" Type="IP">
         <Instance HierarchyPath="microblaze_0_local_memory/lmb_bram"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/blkEth_axi_timer_0_0/blkEth_axi_timer_0_0.xci" Type="IP">
+        <Instance HierarchyPath="axi_timer_0"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

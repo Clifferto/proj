@@ -2,10 +2,10 @@
 <Root MajorVersion="0" MinorVersion="39">
   <CompositeFile CompositeFileTopName="bd_4e4d" CanBeSetAsTop="true" CanDisplayChildGraph="true">
     <Description>Composite Fileset</Description>
-    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1613425974"/>
-    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1613425974"/>
-    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1613425974"/>
-    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1613425974"/>
+    <Generation Name="SYNTHESIS" State="GENERATED" Timestamp="1613430602"/>
+    <Generation Name="IMPLEMENTATION" State="GENERATED" Timestamp="1613430602"/>
+    <Generation Name="SIMULATION" State="GENERATED" Timestamp="1613430602"/>
+    <Generation Name="HW_HANDOFF" State="GENERATED" Timestamp="1613430602"/>
     <FileCollection Name="SOURCES" Type="SOURCES">
       <File Name="synth/bd_4e4d.v" Type="Verilog">
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="false" IsStatusTracked="false"/>
@@ -425,6 +425,62 @@
       </File>
       <File Name="ip/ip_50/bd_4e4d_m04e_0.xci" Type="IP">
         <Instance HierarchyPath="m04_exit_pipeline/m04_exit"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_51/bd_4e4d_m05s2a_0.xci" Type="IP">
+        <Instance HierarchyPath="m05_sc2axi"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_52/bd_4e4d_m05arn_0.xci" Type="IP">
+        <Instance HierarchyPath="m05_nodes/m05_ar_node"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_53/bd_4e4d_m05rn_0.xci" Type="IP">
+        <Instance HierarchyPath="m05_nodes/m05_r_node"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_54/bd_4e4d_m05awn_0.xci" Type="IP">
+        <Instance HierarchyPath="m05_nodes/m05_aw_node"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_55/bd_4e4d_m05wn_0.xci" Type="IP">
+        <Instance HierarchyPath="m05_nodes/m05_w_node"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_56/bd_4e4d_m05bn_0.xci" Type="IP">
+        <Instance HierarchyPath="m05_nodes/m05_b_node"/>
+        <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
+        <Library Name="xil_defaultlib"/>
+        <UsedIn Val="SYNTHESIS"/>
+        <UsedIn Val="IMPLEMENTATION"/>
+        <UsedIn Val="SIMULATION"/>
+      </File>
+      <File Name="ip/ip_57/bd_4e4d_m05e_0.xci" Type="IP">
+        <Instance HierarchyPath="m05_exit_pipeline/m05_exit"/>
         <Properties IsEditable="false" IsVisible="true" Timestamp="0" IsTrackable="true" IsStatusTracked="true"/>
         <Library Name="xil_defaultlib"/>
         <UsedIn Val="SYNTHESIS"/>

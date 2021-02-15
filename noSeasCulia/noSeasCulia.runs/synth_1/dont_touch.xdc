@@ -52,4 +52,7 @@ set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blkEth_ilmb_bra
 # IP: bd/blkEth/ip/blkEth_lmb_bram_7/blkEth_lmb_bram_7.xci
 set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blkEth_lmb_bram_7 || ORIG_REF_NAME==blkEth_lmb_bram_7} -quiet] -quiet
 
+# IP: bd/blkEth/ip/blkEth_axi_timer_0_0/blkEth_axi_timer_0_0.xci
+set_property DONT_TOUCH TRUE [get_cells -hier -filter {REF_NAME==blkEth_axi_timer_0_0 || ORIG_REF_NAME==blkEth_axi_timer_0_0} -quiet] -quiet
+
 # XDC: bd/blkEth/blkEth_ooc.xdc

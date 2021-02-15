@@ -76,6 +76,8 @@ blkEth_axi_smc_1_sc::blkEth_axi_smc_1_sc(const sc_core::sc_module_name& nm) : sc
   M03_AXI_tlm_aximm_write_socket = mp_impl->M03_AXI_tlm_aximm_write_socket;
   M04_AXI_tlm_aximm_read_socket = mp_impl->M04_AXI_tlm_aximm_read_socket;
   M04_AXI_tlm_aximm_write_socket = mp_impl->M04_AXI_tlm_aximm_write_socket;
+  M05_AXI_tlm_aximm_read_socket = mp_impl->M05_AXI_tlm_aximm_read_socket;
+  M05_AXI_tlm_aximm_write_socket = mp_impl->M05_AXI_tlm_aximm_write_socket;
 }
 
 blkEth_axi_smc_1_sc::~blkEth_axi_smc_1_sc()
