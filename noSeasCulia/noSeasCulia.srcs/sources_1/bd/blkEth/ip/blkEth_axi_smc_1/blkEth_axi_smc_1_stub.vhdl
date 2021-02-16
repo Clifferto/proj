@@ -1,7 +1,7 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
--- Date        : Mon Feb 15 20:14:20 2021
+-- Date        : Mon Feb 15 21:36:16 2021
 -- Host        : huaira running 64-bit Linux Mint 20
 -- Command     : write_vhdl -force -mode synth_stub
 --               /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_axi_smc_1/blkEth_axi_smc_1_stub.vhdl

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="blkEth_axi_ethernet_0_gtxclk_0_synth_1" LaunchPart="xc7k325tffg900-2" LaunchTime="1613422341">
-  <File Type="RDS-UTIL" Name="blkEth_axi_ethernet_0_gtxclk_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="blkEth_axi_ethernet_0_gtxclk_0_utilization_synth.pb"/>
+  <File Type="RDS-UTIL" Name="blkEth_axi_ethernet_0_gtxclk_0_utilization_synth.rpt"/>
   <File Type="RDS-RDS" Name="blkEth_axi_ethernet_0_gtxclk_0.vds"/>
   <File Type="RDS-DCP" Name="blkEth_axi_ethernet_0_gtxclk_0.dcp"/>
   <File Type="PA-TCL" Name="blkEth_axi_ethernet_0_gtxclk_0.tcl"/>
