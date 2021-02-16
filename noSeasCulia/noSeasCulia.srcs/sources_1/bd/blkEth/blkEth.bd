@@ -350,6 +350,9 @@
         "vlnv": "xilinx.com:ip:axi_uartlite:2.0",
         "xci_name": "blkEth_axi_uartlite_0_0",
         "parameters": {
+          "C_BAUDRATE": {
+            "value": "115200"
+          },
           "UARTLITE_BOARD_INTERFACE": {
             "value": "rs232_uart"
           },
@@ -676,16 +679,16 @@
       }
     },
     "interface_nets": {
-      "axi_smc_M05_AXI": {
-        "interface_ports": [
-          "axi_smc/M05_AXI",
-          "axi_timer_0/S_AXI"
-        ]
-      },
       "microblaze_0_dlmb_1": {
         "interface_ports": [
           "microblaze_0/DLMB",
           "microblaze_0_local_memory/DLMB"
+        ]
+      },
+      "axi_smc_M05_AXI": {
+        "interface_ports": [
+          "axi_smc/M05_AXI",
+          "axi_timer_0/S_AXI"
         ]
       },
       "axi_ethernet_0_fifo_AXI_STR_TXC": {
@@ -706,16 +709,16 @@
           "mig_7series_0/DDR3"
         ]
       },
-      "microblaze_0_ilmb_1": {
-        "interface_ports": [
-          "microblaze_0/ILMB",
-          "microblaze_0_local_memory/ILMB"
-        ]
-      },
       "axi_ethernet_0_m_axis_rxd": {
         "interface_ports": [
           "axi_ethernet_0_fifo/AXI_STR_RXD",
           "axi_ethernet_0/m_axis_rxd"
+        ]
+      },
+      "microblaze_0_ilmb_1": {
+        "interface_ports": [
+          "microblaze_0/ILMB",
+          "microblaze_0_local_memory/ILMB"
         ]
       },
       "axi_smc_M00_AXI": {
@@ -728,6 +731,12 @@
         "interface_ports": [
           "sys_diff_clock",
           "mig_7series_0/SYS_CLK"
+        ]
+      },
+      "axi_smc_M04_AXI": {
+        "interface_ports": [
+          "axi_smc/M04_AXI",
+          "axi_ethernet_0_fifo/S_AXI"
         ]
       },
       "axi_smc_M01_AXI": {
@@ -776,12 +785,6 @@
         "interface_ports": [
           "axi_smc/M03_AXI",
           "axi_ethernet_0/s_axi"
-        ]
-      },
-      "axi_smc_M04_AXI": {
-        "interface_ports": [
-          "axi_smc/M04_AXI",
-          "axi_ethernet_0_fifo/S_AXI"
         ]
       },
       "axi_intc_0_interrupt": {
