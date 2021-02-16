@@ -2,8 +2,8 @@
 # Vivado v2019.2 (64-bit)
 # SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
 # IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
-# Start of session at: Mon Feb 15 23:59:06 2021
-# Process ID: 3156
+# Start of session at: Tue Feb 16 14:55:37 2021
+# Process ID: 32217
 # Current directory: /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.runs/impl_1
 # Command line: vivado -log blkEth_wrapper.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source blkEth_wrapper.tcl -notrace
 # Log file: /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.runs/impl_1/blkEth_wrapper.vdi

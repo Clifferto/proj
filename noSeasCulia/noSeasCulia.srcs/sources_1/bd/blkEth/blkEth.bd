@@ -610,6 +610,18 @@
           }
         },
         "interface_nets": {
+          "microblaze_0_dlmb_bus": {
+            "interface_ports": [
+              "dlmb_v10/LMB_Sl_0",
+              "dlmb_bram_if_cntlr/SLMB"
+            ]
+          },
+          "microblaze_0_dlmb": {
+            "interface_ports": [
+              "DLMB",
+              "dlmb_v10/LMB_M"
+            ]
+          },
           "microblaze_0_ilmb": {
             "interface_ports": [
               "ILMB",
@@ -632,18 +644,6 @@
             "interface_ports": [
               "dlmb_bram_if_cntlr/BRAM_PORT",
               "lmb_bram/BRAM_PORTA"
-            ]
-          },
-          "microblaze_0_dlmb_bus": {
-            "interface_ports": [
-              "dlmb_v10/LMB_Sl_0",
-              "dlmb_bram_if_cntlr/SLMB"
-            ]
-          },
-          "microblaze_0_dlmb": {
-            "interface_ports": [
-              "DLMB",
-              "dlmb_v10/LMB_M"
             ]
           }
         },
@@ -679,16 +679,16 @@
       }
     },
     "interface_nets": {
-      "microblaze_0_dlmb_1": {
-        "interface_ports": [
-          "microblaze_0/DLMB",
-          "microblaze_0_local_memory/DLMB"
-        ]
-      },
       "axi_smc_M05_AXI": {
         "interface_ports": [
           "axi_smc/M05_AXI",
           "axi_timer_0/S_AXI"
+        ]
+      },
+      "microblaze_0_dlmb_1": {
+        "interface_ports": [
+          "microblaze_0/DLMB",
+          "microblaze_0_local_memory/DLMB"
         ]
       },
       "axi_ethernet_0_fifo_AXI_STR_TXC": {
@@ -709,16 +709,16 @@
           "mig_7series_0/DDR3"
         ]
       },
-      "axi_ethernet_0_m_axis_rxd": {
-        "interface_ports": [
-          "axi_ethernet_0_fifo/AXI_STR_RXD",
-          "axi_ethernet_0/m_axis_rxd"
-        ]
-      },
       "microblaze_0_ilmb_1": {
         "interface_ports": [
           "microblaze_0/ILMB",
           "microblaze_0_local_memory/ILMB"
+        ]
+      },
+      "axi_ethernet_0_m_axis_rxd": {
+        "interface_ports": [
+          "axi_ethernet_0_fifo/AXI_STR_RXD",
+          "axi_ethernet_0/m_axis_rxd"
         ]
       },
       "axi_smc_M00_AXI": {
@@ -990,7 +990,7 @@
               "SEG_ilmb_bram_if_cntlr_Mem": {
                 "address_block": "/microblaze_0_local_memory/ilmb_bram_if_cntlr/SLMB/Mem",
                 "offset": "0x00000000",
-                "range": "128K"
+                "range": "256K"
               }
             }
           }
