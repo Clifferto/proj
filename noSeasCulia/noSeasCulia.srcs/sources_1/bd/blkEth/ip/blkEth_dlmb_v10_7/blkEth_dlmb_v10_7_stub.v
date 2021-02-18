@@ -1,11 +1,11 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-// Date        : Mon Feb 15 17:54:27 2021
+// Date        : Wed Feb 17 05:39:54 2021
 // Host        : huaira running 64-bit Linux Mint 20
 // Command     : write_verilog -force -mode synth_stub -rename_top blkEth_dlmb_v10_7 -prefix
-//               blkEth_dlmb_v10_7_ blkEth_dlmb_v10_6_stub.v
-// Design      : blkEth_dlmb_v10_6
+//               blkEth_dlmb_v10_7_ blkEth_ilmb_v10_7_stub.v
+// Design      : blkEth_ilmb_v10_7
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7k325tffg900-2
 // --------------------------------------------------------------------------------

@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-| Date             : Tue Feb 16 15:04:46 2021
+| Date             : Thu Feb 18 15:48:35 2021
 | Host             : huaira running 64-bit Linux Mint 20
 | Command          : report_power -file blkEth_wrapper_power_routed.rpt -pb blkEth_wrapper_power_summary_routed.pb -rpx blkEth_wrapper_power_routed.rpx
 | Design           : blkEth_wrapper
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 3.091        |
+| Total On-Chip Power (W)  | 2.914        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 2.907        |
-| Device Static (W)        | 0.184        |
+| Dynamic (W)              | 2.732        |
+| Device Static (W)        | 0.183        |
 | Effective TJA (C/W)      | 1.8          |
-| Max Ambient (C)          | 79.5         |
-| Junction Temperature (C) | 30.5         |
+| Max Ambient (C)          | 79.8         |
+| Junction Temperature (C) | 30.2         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,24 +52,24 @@ Table of Contents
 +--------------------------+-----------+----------+-----------+-----------------+
 | On-Chip                  | Power (W) | Used     | Available | Utilization (%) |
 +--------------------------+-----------+----------+-----------+-----------------+
-| Clocks                   |     0.260 |       58 |       --- |             --- |
-| Slice Logic              |     0.154 |    84215 |       --- |             --- |
-|   LUT as Logic           |     0.108 |    22013 |    203800 |           10.80 |
-|   LUT as Distributed RAM |     0.033 |     8056 |     64000 |           12.59 |
-|   Register               |     0.009 |    35123 |    407600 |            8.62 |
-|   CARRY4                 |     0.003 |      610 |     50950 |            1.20 |
-|   F7/F8 Muxes            |     0.001 |     1825 |    203800 |            0.90 |
-|   LUT as Shift Register  |    <0.001 |      667 |     64000 |            1.04 |
-|   Others                 |    <0.001 |     1943 |       --- |             --- |
-| Signals                  |     0.242 |    55308 |       --- |             --- |
-| Block RAM                |     0.057 |       78 |       445 |           17.53 |
-| MMCM                     |     0.322 |        3 |        10 |           30.00 |
+| Clocks                   |     0.225 |       59 |       --- |             --- |
+| Slice Logic              |     0.115 |    85645 |       --- |             --- |
+|   LUT as Logic           |     0.083 |    22250 |    203800 |           10.92 |
+|   LUT as Distributed RAM |     0.021 |     8168 |     64000 |           12.76 |
+|   Register               |     0.007 |    35851 |    407600 |            8.80 |
+|   CARRY4                 |     0.002 |      610 |     50950 |            1.20 |
+|   F7/F8 Muxes            |    <0.001 |     1981 |    203800 |            0.97 |
+|   LUT as Shift Register  |    <0.001 |      669 |     64000 |            1.05 |
+|   Others                 |    <0.001 |     1976 |       --- |             --- |
+| Signals                  |     0.170 |    57260 |       --- |             --- |
+| Block RAM                |     0.030 |       78 |       445 |           17.53 |
+| MMCM                     |     0.321 |        3 |        10 |           30.00 |
 | PLL                      |     0.133 |        1 |        10 |           10.00 |
-| I/O                      |     1.074 |      145 |       500 |           29.00 |
+| I/O                      |     1.072 |      145 |       500 |           29.00 |
 | PHASER                   |     0.661 |       44 |       --- |             --- |
 | XADC                     |     0.004 |        1 |       --- |             --- |
-| Static Power             |     0.184 |          |           |                 |
-| Total                    |     3.091 |          |           |                 |
+| Static Power             |     0.183 |          |           |                 |
+| Total                    |     2.914 |          |           |                 |
 +--------------------------+-----------+----------+-----------+-----------------+
 
 
@@ -79,16 +79,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     1.024 |       0.937 |      0.087 |
-| Vccaux    |       1.800 |     0.763 |       0.734 |      0.029 |
+| Vccint    |       1.000 |     0.852 |       0.766 |      0.086 |
+| Vccaux    |       1.800 |     0.762 |       0.733 |      0.029 |
 | Vcco33    |       3.300 |     0.000 |       0.000 |      0.000 |
 | Vcco25    |       2.500 |     0.006 |       0.005 |      0.001 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vcco15    |       1.500 |     0.420 |       0.419 |      0.001 |
+| Vcco15    |       1.500 |     0.419 |       0.418 |      0.001 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.009 |       0.005 |      0.005 |
+| Vccbram   |       1.000 |     0.007 |       0.003 |      0.005 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | MGTVccaux |       1.800 |     0.000 |       0.000 |      0.000 |
@@ -140,9 +140,8 @@ Table of Contents
 | blkEth_i/mdm_1/U0/Use_E2.BSCAN_I/Use_E2.BSCANE2_I/UPDATE                                                                                                  | blkEth_i/mdm_1/U0/Use_E2.BSCAN_I/Ext_JTAG_UPDATE                                                                                                                                                                       |            33.3 |
 | clk_out1_blkEth_axi_ethernet_0_gtxclk_0                                                                                                                   | blkEth_i/axi_ethernet_0_gtxclk/inst/clk_out1_blkEth_axi_ethernet_0_gtxclk_0                                                                                                                                            |             8.0 |
 | clk_pll_i                                                                                                                                                 | blkEth_i/mig_7series_0/u_blkEth_mig_7series_0_2_mig/u_ddr3_infrastructure/clk_pll_i                                                                                                                                    |             5.0 |
-| clk_pll_i                                                                                                                                                 | blkEth_i/mig_7series_0/u_blkEth_mig_7series_0_2_mig/u_ddr3_infrastructure/gen_ui_extra_clocks.mmcm_i_0                                                                                                                 |             5.0 |
 | clk_ref_mmcm_400                                                                                                                                          | blkEth_i/mig_7series_0/u_blkEth_mig_7series_0_2_mig/u_iodelay_ctrl/clk_ref_mmcm_400                                                                                                                                    |             2.5 |
-| clkfbout_blkEth_axi_ethernet_0_gtxclk_0                                                                                                                   | blkEth_i/axi_ethernet_0_gtxclk/inst/clkfbout_blkEth_axi_ethernet_0_gtxclk_0                                                                                                                                            |             5.0 |
+| clkfbout_blkEth_axi_ethernet_0_gtxclk_0                                                                                                                   | blkEth_i/axi_ethernet_0_gtxclk/inst/clkfbout_blkEth_axi_ethernet_0_gtxclk_0                                                                                                                                            |            10.0 |
 | freq_refclk                                                                                                                                               | blkEth_i/mig_7series_0/u_blkEth_mig_7series_0_2_mig/u_ddr3_infrastructure/freq_refclk                                                                                                                                  |             1.3 |
 | gmii_rx_clk                                                                                                                                               | gmii_rx_clk                                                                                                                                                                                                            |             8.0 |
 | gmii_tx_clk                                                                                                                                               | gmii_tx_clk                                                                                                                                                                                                            |             8.0 |
@@ -156,6 +155,8 @@ Table of Contents
 | iserdes_clkdiv_7                                                                                                                                          | blkEth_i/mig_7series_0/u_blkEth_mig_7series_0_2_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_2.u_ddr_phy_4lanes/ddr_byte_lane_D.ddr_byte_lane_D/iserdes_clkdiv       |             2.5 |
 | mem_refclk                                                                                                                                                | blkEth_i/mig_7series_0/u_blkEth_mig_7series_0_2_mig/u_ddr3_infrastructure/mem_refclk                                                                                                                                   |             1.2 |
 | mmcm_clkfbout                                                                                                                                             | blkEth_i/mig_7series_0/u_blkEth_mig_7series_0_2_mig/u_iodelay_ctrl/mmcm_clkfbout                                                                                                                                       |             5.0 |
+| mmcm_clkout0                                                                                                                                              | blkEth_i/mig_7series_0/u_blkEth_mig_7series_0_2_mig/u_ddr3_infrastructure/mmcm_clkout0                                                                                                                                 |            10.0 |
+| mmcm_clkout0                                                                                                                                              | blkEth_i/mig_7series_0/u_blkEth_mig_7series_0_2_mig/u_ddr3_infrastructure/ui_addn_clk_0                                                                                                                                |            10.0 |
 | mmcm_ps_clk_bufg_in                                                                                                                                       | blkEth_i/mig_7series_0/u_blkEth_mig_7series_0_2_mig/u_ddr3_infrastructure/mmcm_ps_clk_bufg_in                                                                                                                          |            10.0 |
 | oserdes_clk                                                                                                                                               | blkEth_i/mig_7series_0/u_blkEth_mig_7series_0_2_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_A.ddr_byte_lane_A/oserdes_clk          |             1.2 |
 | oserdes_clk_1                                                                                                                                             | blkEth_i/mig_7series_0/u_blkEth_mig_7series_0_2_mig/u_memc_ui_top_axi/mem_intfc0/ddr_phy_top0/u_ddr_mc_phy_wrapper/u_ddr_mc_phy/ddr_phy_4lanes_0.u_ddr_phy_4lanes/ddr_byte_lane_B.ddr_byte_lane_B/oserdes_clk          |             1.2 |
@@ -203,28 +204,26 @@ Table of Contents
 +------------------------------------+-----------+
 | Name                               | Power (W) |
 +------------------------------------+-----------+
-| blkEth_wrapper                     |     2.907 |
-|   blkEth_i                         |     2.906 |
-|     axi_ethernet_0                 |     0.104 |
-|       inst                         |     0.104 |
-|     axi_ethernet_0_fifo            |     0.024 |
-|       U0                           |     0.024 |
-|     axi_ethernet_0_gtxclk          |     0.110 |
-|       inst                         |     0.110 |
+| blkEth_wrapper                     |     2.732 |
+|   blkEth_i                         |     2.731 |
+|     axi_ethernet_0                 |     0.086 |
+|       inst                         |     0.086 |
+|     axi_ethernet_0_fifo            |     0.012 |
+|       U0                           |     0.012 |
+|     axi_ethernet_0_gtxclk          |     0.107 |
+|       inst                         |     0.107 |
 |     axi_intc_0                     |     0.002 |
 |       U0                           |     0.002 |
-|     axi_smc                        |     0.316 |
-|       inst                         |     0.316 |
-|     axi_timer_0                    |     0.007 |
-|       U0                           |     0.007 |
-|     axi_uartlite_0                 |     0.001 |
-|       U0                           |     0.001 |
-|     microblaze_0                   |     0.043 |
-|       U0                           |     0.043 |
-|     microblaze_0_local_memory      |     0.027 |
-|       lmb_bram                     |     0.027 |
-|     mig_7series_0                  |     2.272 |
-|       u_blkEth_mig_7series_0_2_mig |     2.272 |
+|     axi_smc                        |     0.194 |
+|       inst                         |     0.194 |
+|     axi_timer_0                    |     0.003 |
+|       U0                           |     0.003 |
+|     microblaze_0                   |     0.013 |
+|       U0                           |     0.013 |
+|     microblaze_0_local_memory      |     0.014 |
+|       lmb_bram                     |     0.014 |
+|     mig_7series_0                  |     2.299 |
+|       u_blkEth_mig_7series_0_2_mig |     2.299 |
 +------------------------------------+-----------+
 
 

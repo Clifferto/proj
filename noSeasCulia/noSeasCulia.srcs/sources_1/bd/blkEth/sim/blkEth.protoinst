@@ -150,7 +150,7 @@
 				"/axi_smc/M00_AXI": {
 					"interface": "xilinx.com:interface:aximm:1.0",
 					"ports": {
-						"ACLK": { "actual": "aclk"},
+						"ACLK": { "actual": "aclk1"},
 						"ARADDR": { "actual": "M00_AXI_araddr"},
 						"ARBURST": { "actual": "M00_AXI_arburst"},
 						"ARCACHE": { "actual": "M00_AXI_arcache"},

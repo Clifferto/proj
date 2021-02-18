@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (lin64) Build 2708876 Wed Nov  6 21:39:14 MST 2019
-// Date        : Mon Feb 15 20:00:15 2021
+// Date        : Wed Feb 17 05:39:25 2021
 // Host        : huaira running 64-bit Linux Mint 20
 // Command     : write_verilog -force -mode synth_stub
 //               /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_axi_timer_0_0/blkEth_axi_timer_0_0_stub.v

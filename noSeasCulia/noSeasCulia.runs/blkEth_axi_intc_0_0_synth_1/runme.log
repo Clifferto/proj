@@ -15,11 +15,11 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7k325t'
 INFO: [Device 21-403] Loading part xc7k325tffg900-2
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 40266 
+INFO: Helper process launched with PID 5789 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 1871.336 ; gain = 198.719 ; free physical = 9416 ; free virtual = 27064
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1873.062 ; gain = 201.719 ; free physical = 7591 ; free virtual = 24630
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'blkEth_axi_intc_0_0' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_axi_intc_0_0/synth/blkEth_axi_intc_0_0.vhd:85]
+INFO: [Synth 8-638] synthesizing module 'blkEth_axi_intc_0_0' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_axi_intc_0_0/synth/blkEth_axi_intc_0_0.vhd:89]
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 	Parameter C_INSTANCE bound to: blkEth_axi_intc_0_0 - type: string 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
@@ -41,12 +41,12 @@ INFO: [Synth 8-638] synthesizing module 'blkEth_axi_intc_0_0' [/home/becario/eth
 	Parameter C_HAS_ILR bound to: 0 - type: integer 
 	Parameter C_IRQ_IS_LEVEL bound to: 1 - type: integer 
 	Parameter C_IRQ_ACTIVE bound to: 1'b1 
-	Parameter C_DISABLE_SYNCHRONIZERS bound to: 0 - type: integer 
+	Parameter C_DISABLE_SYNCHRONIZERS bound to: 1 - type: integer 
 	Parameter C_MB_CLK_NOT_CONNECTED bound to: 1 - type: integer 
-	Parameter C_HAS_FAST bound to: 0 - type: integer 
+	Parameter C_HAS_FAST bound to: 1 - type: integer 
 	Parameter C_EN_CASCADE_MODE bound to: 0 - type: integer 
 	Parameter C_CASCADE_MASTER bound to: 0 - type: integer 
-INFO: [Synth 8-3491] module 'axi_intc' declared at '/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:3452' bound to instance 'U0' of component 'axi_intc' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_axi_intc_0_0/synth/blkEth_axi_intc_0_0.vhd:185]
+INFO: [Synth 8-3491] module 'axi_intc' declared at '/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:3452' bound to instance 'U0' of component 'axi_intc' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_axi_intc_0_0/synth/blkEth_axi_intc_0_0.vhd:195]
 INFO: [Synth 8-638] synthesizing module 'axi_intc' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:3553]
 	Parameter C_FAMILY bound to: kintex7 - type: string 
 	Parameter C_INSTANCE bound to: blkEth_axi_intc_0_0 - type: string 
@@ -68,9 +68,9 @@ INFO: [Synth 8-638] synthesizing module 'axi_intc' [/home/becario/ethernet/proj/
 	Parameter C_HAS_ILR bound to: 0 - type: integer 
 	Parameter C_IRQ_IS_LEVEL bound to: 1 - type: integer 
 	Parameter C_IRQ_ACTIVE bound to: 1'b1 
-	Parameter C_DISABLE_SYNCHRONIZERS bound to: 0 - type: integer 
+	Parameter C_DISABLE_SYNCHRONIZERS bound to: 1 - type: integer 
 	Parameter C_MB_CLK_NOT_CONNECTED bound to: 1 - type: integer 
-	Parameter C_HAS_FAST bound to: 0 - type: integer 
+	Parameter C_HAS_FAST bound to: 1 - type: integer 
 	Parameter C_ENABLE_ASYNC bound to: 0 - type: integer 
 	Parameter C_EN_CASCADE_MODE bound to: 0 - type: integer 
 	Parameter C_CASCADE_MASTER bound to: 0 - type: integer 
@@ -91,18 +91,26 @@ INFO: [Synth 8-638] synthesizing module 'intc_core' [/home/becario/ethernet/proj
 	Parameter C_HAS_ILR bound to: 0 - type: integer 
 	Parameter C_IRQ_IS_LEVEL bound to: 1 - type: integer 
 	Parameter C_IRQ_ACTIVE bound to: 1'b1 
-	Parameter C_DISABLE_SYNCHRONIZERS bound to: 0 - type: integer 
+	Parameter C_DISABLE_SYNCHRONIZERS bound to: 1 - type: integer 
 	Parameter C_MB_CLK_NOT_CONNECTED bound to: 1 - type: integer 
-	Parameter C_HAS_FAST bound to: 0 - type: integer 
+	Parameter C_HAS_FAST bound to: 1 - type: integer 
 	Parameter C_IVAR_RESET_VALUE bound to: 64'b0000000000000000000000000000000000000000000000000000000000010000 
 	Parameter C_IVAR_WE_WIDTH bound to: 1 - type: integer 
 	Parameter C_ADDR_WIDTH bound to: 32 - type: integer 
 	Parameter C_EN_CASCADE_MODE bound to: 0 - type: integer 
 	Parameter C_CASCADE_MASTER bound to: 0 - type: integer 
 INFO: [Synth 8-5534] Detected attribute (* buffer_type = "none" *) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:767]
+INFO: [Synth 8-638] synthesizing module 'shared_ram_ivar' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:320]
+	Parameter C_WIDTH bound to: 32 - type: integer 
+	Parameter C_DPRAM_DEPTH bound to: 16 - type: integer 
+	Parameter C_ADDR_LINES bound to: 4 - type: integer 
+	Parameter C_WE_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESET_VALUE bound to: 64'b0000000000000000000000000000000000000000000000000000000000010000 
+INFO: [Synth 8-5534] Detected attribute (* ram_style = "distributed" *) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:342]
+INFO: [Synth 8-256] done synthesizing module 'shared_ram_ivar' (1#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:320]
 INFO: [Synth 8-5534] Detected attribute (* async_reg = "TRUE" *) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:1894]
-WARNING: [Synth 8-6014] Unused sequential element ack_or_reg was removed.  [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:2682]
-INFO: [Synth 8-256] done synthesizing module 'intc_core' (1#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:794]
+WARNING: [Synth 8-6014] Unused sequential element ACK_EN_SYNC_ON_AXI_CLK_GEN.NO_CASCADE_MASTER.second_ack_sync_d3_reg was removed.  [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:1330]
+INFO: [Synth 8-256] done synthesizing module 'intc_core' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:794]
 INFO: [Synth 8-638] synthesizing module 'axi_lite_ipif' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
 	Parameter C_S_AXI_ADDR_WIDTH bound to: 9 - type: integer 
@@ -132,133 +140,133 @@ INFO: [Synth 8-638] synthesizing module 'pselect_f' [/home/becario/ethernet/proj
 	Parameter C_AW bound to: 9 - type: integer 
 	Parameter C_BAR bound to: 9'b000000000 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized0' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b0000 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized0' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized1' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b0001 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized1' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized2' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b0010 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized2' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized3' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b0011 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized3' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized3' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized4' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b0100 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized4' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized4' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized5' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b0101 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized5' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized5' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized6' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b0110 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized6' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized6' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized7' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b0111 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized7' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized7' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized8' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b1000 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized8' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized8' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized9' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b1001 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized9' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized9' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized10' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b1010 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized10' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized10' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized11' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b1011 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized11' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized11' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized12' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b1100 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized12' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized12' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized13' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b1101 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized13' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized13' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized14' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b1110 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized14' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized14' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized15' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 4 - type: integer 
 	Parameter C_AW bound to: 4 - type: integer 
 	Parameter C_BAR bound to: 4'b1111 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized15' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized15' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized16' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 2 - type: integer 
 	Parameter C_AW bound to: 9 - type: integer 
 	Parameter C_BAR bound to: 9'b100000000 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized16' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized16' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized17' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 1 - type: integer 
 	Parameter C_AW bound to: 9 - type: integer 
 	Parameter C_BAR bound to: 9'b000000000 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized17' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized17' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized18' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 1 - type: integer 
 	Parameter C_AW bound to: 1 - type: integer 
 	Parameter C_BAR bound to: 1'b0 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized18' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized18' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 INFO: [Synth 8-638] synthesizing module 'pselect_f__parameterized19' [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
 	Parameter C_AB bound to: 1 - type: integer 
 	Parameter C_AW bound to: 1 - type: integer 
 	Parameter C_BAR bound to: 1'b1 
 	Parameter C_FAMILY bound to: nofamily - type: string 
-INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized19' (2#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
-INFO: [Synth 8-256] done synthesizing module 'address_decoder' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
+INFO: [Synth 8-256] done synthesizing module 'pselect_f__parameterized19' (3#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1534]
+INFO: [Synth 8-256] done synthesizing module 'address_decoder' (4#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:1775]
 INFO: [Synth 8-226] default block is never used [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2550]
-INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (4#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
-INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (5#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
-INFO: [Synth 8-256] done synthesizing module 'axi_intc' (6#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:3553]
-INFO: [Synth 8-256] done synthesizing module 'blkEth_axi_intc_0_0' (7#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_axi_intc_0_0/synth/blkEth_axi_intc_0_0.vhd:85]
+INFO: [Synth 8-256] done synthesizing module 'slave_attachment' (5#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2341]
+INFO: [Synth 8-256] done synthesizing module 'axi_lite_ipif' (6#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/66ea/hdl/axi_lite_ipif_v3_0_vh_rfs.vhd:2948]
+INFO: [Synth 8-256] done synthesizing module 'axi_intc' (7#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ipshared/f78a/hdl/axi_intc_v4_1_vh_rfs.vhd:3553]
+INFO: [Synth 8-256] done synthesizing module 'blkEth_axi_intc_0_0' (8#1) [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_axi_intc_0_0/synth/blkEth_axi_intc_0_0.vhd:89]
 WARNING: [Synth 8-3331] design pselect_f__parameterized17 has unconnected port A[1]
 WARNING: [Synth 8-3331] design pselect_f__parameterized17 has unconnected port A[2]
 WARNING: [Synth 8-3331] design pselect_f__parameterized17 has unconnected port A[3]
@@ -290,12 +298,10 @@ WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_rdce[12]
 WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_rdce[13]
 WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_rdce[14]
 WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_rdce[15]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_rdce[16]
 WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_rdce[17]
 WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_rdce[18]
 WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[1]
 WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[6]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[8]
 WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[9]
 WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[10]
 WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[11]
@@ -303,39 +309,10 @@ WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[12]
 WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[13]
 WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[14]
 WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[15]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[16]
 WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[17]
 WARNING: [Synth 8-3331] design intc_core has unconnected port Bus2ip_wrce[18]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[31]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[30]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[29]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[28]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[27]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[26]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[25]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[24]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[23]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[22]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[21]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[20]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[19]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[18]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[17]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[16]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[15]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[14]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[13]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[12]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[11]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[10]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[9]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[8]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[7]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Wr_data[6]
 WARNING: [Synth 8-3331] design intc_core has unconnected port Processor_clk
 WARNING: [Synth 8-3331] design intc_core has unconnected port processor_rst
-WARNING: [Synth 8-3331] design intc_core has unconnected port Processor_ack[1]
-WARNING: [Synth 8-3331] design intc_core has unconnected port Processor_ack[0]
 WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[31]
 WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[30]
 WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[29]
@@ -359,9 +336,18 @@ WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_
 WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[11]
 WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[10]
 WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[9]
-INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[8]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[7]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[6]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[5]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[4]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[3]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[2]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[1]
+WARNING: [Synth 8-3331] design intc_core has unconnected port Interrupt_address_in[0]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port irq_in
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1939.055 ; gain = 266.438 ; free physical = 9347 ; free virtual = 26995
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 1940.781 ; gain = 269.438 ; free physical = 7524 ; free virtual = 24568
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -374,12 +360,12 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1939.055 ; gain = 266.438 ; free physical = 9309 ; free virtual = 26957
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1940.781 ; gain = 269.438 ; free physical = 7462 ; free virtual = 24505
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1939.055 ; gain = 266.438 ; free physical = 9309 ; free virtual = 26957
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 1940.781 ; gain = 269.438 ; free physical = 7462 ; free virtual = 24505
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1939.055 ; gain = 0.000 ; free physical = 9302 ; free virtual = 26950
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.03 . Memory (MB): peak = 1940.781 ; gain = 0.000 ; free physical = 7448 ; free virtual = 24491
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -394,29 +380,38 @@ Parsing XDC File [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sourc
 Finished Parsing XDC File [/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.srcs/sources_1/bd/blkEth/ip/blkEth_axi_intc_0_0/blkEth_axi_intc_0_0_clocks.xdc] for cell 'U0'
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2099.836 ; gain = 0.000 ; free physical = 9199 ; free virtual = 26848
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2103.562 ; gain = 0.000 ; free physical = 7282 ; free virtual = 24343
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2099.836 ; gain = 0.000 ; free physical = 9197 ; free virtual = 26846
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.05 . Memory (MB): peak = 2107.531 ; gain = 3.969 ; free physical = 7327 ; free virtual = 24388
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2099.836 ; gain = 427.219 ; free physical = 9113 ; free virtual = 26762
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2107.531 ; gain = 436.188 ; free physical = 7501 ; free virtual = 24579
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7k325tffg900-2
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2099.836 ; gain = 427.219 ; free physical = 9113 ; free virtual = 26762
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2107.531 ; gain = 436.188 ; free physical = 7502 ; free virtual = 24579
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for U0. (constraint file  /home/becario/ethernet/proj/noSeasCulia/noSeasCulia.runs/blkEth_axi_intc_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 2099.836 ; gain = 427.219 ; free physical = 9110 ; free virtual = 26759
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2107.531 ; gain = 436.188 ; free physical = 7508 ; free virtual = 24585
 ---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'IRQ_LEVEL_GEN.IRQ_LEVEL_FAST_ON_AXI_CLK_GEN.current_state_reg' in module 'intc_core'
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave_attachment'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    idle |                               00 |                               00
+           gen_level_irq |                               01 |                               01
+                wait_ack |                               10 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'IRQ_LEVEL_GEN.IRQ_LEVEL_FAST_ON_AXI_CLK_GEN.current_state_reg' using encoding 'sequential' in module 'intc_core'
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -427,7 +422,7 @@ INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'slave
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'slave_attachment'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 2099.836 ; gain = 427.219 ; free physical = 9059 ; free virtual = 26708
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 2107.531 ; gain = 436.188 ; free physical = 7517 ; free virtual = 24602
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -442,15 +437,14 @@ Detailed RTL Component Info :
 +---Adders : 
 	   2 Input      4 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 2     
+	               32 Bit    Registers := 4     
 	                9 Bit    Registers := 1     
 	                4 Bit    Registers := 1     
-	                3 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 6     
-	                1 Bit    Registers := 77    
+	                1 Bit    Registers := 92    
 +---Muxes : 
-	   7 Input     32 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 3     
 	   2 Input     29 Bit        Muxes := 1     
 	   2 Input      9 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 1     
@@ -459,9 +453,10 @@ Detailed RTL Component Info :
 	   4 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 4     
 	   3 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
 	   7 Input      2 Bit        Muxes := 1     
-	   2 Input      2 Bit        Muxes := 2     
-	   2 Input      1 Bit        Muxes := 22    
+	   2 Input      1 Bit        Muxes := 43    
 	   4 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
@@ -470,21 +465,27 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
+Module shared_ram_ivar 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
 Module intc_core 
 Detailed RTL Component Info : 
 +---Registers : 
 	               32 Bit    Registers := 1     
-	                3 Bit    Registers := 1     
+	                3 Bit    Registers := 2     
 	                2 Bit    Registers := 3     
-	                1 Bit    Registers := 43    
+	                1 Bit    Registers := 58    
 +---Muxes : 
-	   7 Input     32 Bit        Muxes := 1     
-	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 3     
 	   2 Input     29 Bit        Muxes := 1     
 	   2 Input      6 Bit        Muxes := 1     
 	   4 Input      3 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 4     
 	   3 Input      3 Bit        Muxes := 2     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 21    
 Module pselect_f 
 Detailed RTL Component Info : 
 +---Muxes : 
@@ -599,6 +600,28 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3331] design axi_intc has unconnected port processor_clk
+WARNING: [Synth 8-3331] design axi_intc has unconnected port processor_rst
+WARNING: [Synth 8-3331] design axi_intc has unconnected port irq_in
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[31]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[30]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[29]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[28]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[27]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[26]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[25]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[24]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[23]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[22]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[21]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[20]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[19]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[18]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[17]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[16]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[15]
+WARNING: [Synth 8-3331] design axi_intc has unconnected port interrupt_address_in[14]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-3886] merging instance 'U0/INTC_CORE_I/IPR_GEN.ipr_reg[6]' (FDR) to 'U0/INTC_CORE_I/IPR_GEN.ipr_reg[31]'
 INFO: [Synth 8-3886] merging instance 'U0/INTC_CORE_I/IPR_GEN.ipr_reg[7]' (FDR) to 'U0/INTC_CORE_I/IPR_GEN.ipr_reg[31]'
 INFO: [Synth 8-3886] merging instance 'U0/INTC_CORE_I/IPR_GEN.ipr_reg[8]' (FDR) to 'U0/INTC_CORE_I/IPR_GEN.ipr_reg[31]'
@@ -627,33 +650,23 @@ INFO: [Synth 8-3886] merging instance 'U0/INTC_CORE_I/IPR_GEN.ipr_reg[30]' (FDR)
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\INTC_CORE_I/IPR_GEN.ipr_reg[31] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rresp_i_reg[0] )
 INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_bresp_i_reg[0] )
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[6]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[7]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[7]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[8]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[8]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[9]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[9]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[10]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[10]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[11]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[11]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[12]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[12]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[13]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[13]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[14]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[14]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[15]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[16]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[16]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[17]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[17]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[18]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[18]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[19]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[19]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[20]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[20]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[21]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[21]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[22]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[22]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[23]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[23]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[24]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[24]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[25]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[25]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[26]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[26]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[27]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[27]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[28]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[28]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[29]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[29]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[30]'
-INFO: [Synth 8-3886] merging instance 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[30]' (FDRE) to 'U0/AXI_LITE_IPIF_I/I_SLAVE_ATTACHMENT/s_axi_rdata_i_reg[31]'
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:15 . Memory (MB): peak = 2099.836 ; gain = 427.219 ; free physical = 9013 ; free virtual = 26667
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 2107.531 ; gain = 436.188 ; free physical = 7413 ; free virtual = 24501
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping	Report (see note below)
++------------+-----------------------------------------------------------------------------------------+----------------+----------------------+----------------+
+|Module Name | RTL Object                                                                              | Inference      | Size (Depth x Width) | Primitives     | 
++------------+-----------------------------------------------------------------------------------------+----------------+----------------------+----------------+
+|U0          | INTC_CORE_I/IVAR_FAST_MODE_GEN.IVAR_REG_MEM_AXI_CLK_GEN.IVAR_REG_MEM_I/ram_i[0].ram_reg | User Attribute | 16 x 32              | RAM16X1D x 32	 | 
++------------+-----------------------------------------------------------------------------------------+----------------+----------------------+----------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -665,13 +678,27 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:21 . Memory (MB): peak = 2099.836 ; gain = 427.219 ; free physical = 8952 ; free virtual = 26618
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2107.531 ; gain = 436.188 ; free physical = 7114 ; free virtual = 24212
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2099.836 ; gain = 427.219 ; free physical = 8941 ; free virtual = 26607
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 2107.531 ; gain = 436.188 ; free physical = 7065 ; free virtual = 24163
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping	Report
++------------+-----------------------------------------------------------------------------------------+----------------+----------------------+----------------+
+|Module Name | RTL Object                                                                              | Inference      | Size (Depth x Width) | Primitives     | 
++------------+-----------------------------------------------------------------------------------------+----------------+----------------------+----------------+
+|U0          | INTC_CORE_I/IVAR_FAST_MODE_GEN.IVAR_REG_MEM_AXI_CLK_GEN.IVAR_REG_MEM_I/ram_i[0].ram_reg | User Attribute | 16 x 32              | RAM16X1D x 32	 | 
++------------+-----------------------------------------------------------------------------------------+----------------+----------------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -683,7 +710,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 2099.836 ; gain = 427.219 ; free physical = 8938 ; free virtual = 26604
+Finished Technology Mapping : Time (s): cpu = 00:00:24 ; elapsed = 00:00:31 . Memory (MB): peak = 2107.531 ; gain = 436.188 ; free physical = 7067 ; free virtual = 24165
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -707,13 +734,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2099.836 ; gain = 427.219 ; free physical = 8786 ; free virtual = 26451
+Finished IO Insertion : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2107.531 ; gain = 436.188 ; free physical = 6863 ; free virtual = 23961
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2099.836 ; gain = 427.219 ; free physical = 8786 ; free virtual = 26451
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2107.531 ; gain = 436.188 ; free physical = 6863 ; free virtual = 23961
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -732,25 +759,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2099.836 ; gain = 427.219 ; free physical = 8786 ; free virtual = 26451
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2107.531 ; gain = 436.188 ; free physical = 6871 ; free virtual = 23969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2099.836 ; gain = 427.219 ; free physical = 8786 ; free virtual = 26451
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2107.531 ; gain = 436.188 ; free physical = 6871 ; free virtual = 23969
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2099.836 ; gain = 427.219 ; free physical = 8785 ; free virtual = 26451
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2107.531 ; gain = 436.188 ; free physical = 6870 ; free virtual = 23968
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2099.836 ; gain = 427.219 ; free physical = 8785 ; free virtual = 26451
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2107.531 ; gain = 436.188 ; free physical = 6869 ; free virtual = 23967
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -763,58 +790,63 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+-----+------+
-|      |Cell |Count |
-+------+-----+------+
-|1     |LUT1 |     2|
-|2     |LUT2 |    21|
-|3     |LUT3 |    15|
-|4     |LUT4 |    12|
-|5     |LUT5 |    56|
-|6     |LUT6 |    37|
-|7     |FDRE |   113|
-|8     |FDSE |     2|
-+------+-----+------+
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |LUT1     |     2|
+|2     |LUT2     |    28|
+|3     |LUT3     |    22|
+|4     |LUT4     |    30|
+|5     |LUT5     |    46|
+|6     |LUT6     |    83|
+|7     |RAM16X1D |    32|
+|8     |FDRE     |   222|
+|9     |FDSE     |     2|
++------+---------+------+
 
 Report Instance Areas: 
-+------+-------------------------+-----------------+------+
-|      |Instance                 |Module           |Cells |
-+------+-------------------------+-----------------+------+
-|1     |top                      |                 |   258|
-|2     |  U0                     |axi_intc         |   258|
-|3     |    AXI_LITE_IPIF_I      |axi_lite_ipif    |   149|
-|4     |      I_SLAVE_ATTACHMENT |slave_attachment |   149|
-|5     |        I_DECODER        |address_decoder  |    85|
-|6     |    INTC_CORE_I          |intc_core        |   105|
-+------+-------------------------+-----------------+------+
++------+-------------------------------------------------------------------+-----------------+------+
+|      |Instance                                                           |Module           |Cells |
++------+-------------------------------------------------------------------+-----------------+------+
+|1     |top                                                                |                 |   467|
+|2     |  U0                                                               |axi_intc         |   467|
+|3     |    AXI_LITE_IPIF_I                                                |axi_lite_ipif    |   219|
+|4     |      I_SLAVE_ATTACHMENT                                           |slave_attachment |   219|
+|5     |        I_DECODER                                                  |address_decoder  |   114|
+|6     |    INTC_CORE_I                                                    |intc_core        |   244|
+|7     |      \IVAR_FAST_MODE_GEN.IVAR_REG_MEM_AXI_CLK_GEN.IVAR_REG_MEM_I  |shared_ram_ivar  |    96|
++------+-------------------------------------------------------------------+-----------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2099.836 ; gain = 427.219 ; free physical = 8785 ; free virtual = 26451
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2107.531 ; gain = 436.188 ; free physical = 6869 ; free virtual = 23967
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 63 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:19 ; elapsed = 00:00:22 . Memory (MB): peak = 2099.836 ; gain = 266.438 ; free physical = 8835 ; free virtual = 26501
-Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 2099.836 ; gain = 427.219 ; free physical = 8835 ; free virtual = 26501
+Synthesis finished with 0 errors, 0 critical warnings and 35 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:23 ; elapsed = 00:00:30 . Memory (MB): peak = 2107.531 ; gain = 269.438 ; free physical = 6903 ; free virtual = 24001
+Synthesis Optimization Complete : Time (s): cpu = 00:00:27 ; elapsed = 00:00:34 . Memory (MB): peak = 2107.531 ; gain = 436.188 ; free physical = 6903 ; free virtual = 24001
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2099.836 ; gain = 0.000 ; free physical = 8897 ; free virtual = 26562
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2107.531 ; gain = 0.000 ; free physical = 6848 ; free virtual = 23948
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2099.836 ; gain = 0.000 ; free physical = 8811 ; free virtual = 26476
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2107.531 ; gain = 0.000 ; free physical = 6877 ; free virtual = 23978
 INFO: [Project 1-111] Unisim Transformation Summary:
-No Unisim elements were transformed.
+  A total of 32 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32(x2)): 32 instances
 
 INFO: [Common 17-83] Releasing license: Synthesis
-123 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+105 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:29 ; elapsed = 00:00:34 . Memory (MB): peak = 2099.836 ; gain = 644.285 ; free physical = 8940 ; free virtual = 26605
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2099.836 ; gain = 0.000 ; free physical = 8940 ; free virtual = 26605
+synth_design: Time (s): cpu = 00:00:38 ; elapsed = 00:00:47 . Memory (MB): peak = 2107.531 ; gain = 669.262 ; free physical = 7010 ; free virtual = 24111
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2107.531 ; gain = 0.000 ; free physical = 7010 ; free virtual = 24111
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.runs/blkEth_axi_intc_0_0_synth_1/blkEth_axi_intc_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP blkEth_axi_intc_0_0, cache-ID = b99c380c346acec8
-INFO: [Coretcl 2-1174] Renamed 5 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2123.848 ; gain = 0.000 ; free physical = 8916 ; free virtual = 26582
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP blkEth_axi_intc_0_0, cache-ID = cc3bb2b1162427d0
+INFO: [Coretcl 2-1174] Renamed 6 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2131.543 ; gain = 0.000 ; free physical = 7046 ; free virtual = 24149
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint '/home/becario/ethernet/proj/noSeasCulia/noSeasCulia.runs/blkEth_axi_intc_0_0_synth_1/blkEth_axi_intc_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file blkEth_axi_intc_0_0_utilization_synth.rpt -pb blkEth_axi_intc_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Feb 15 20:00:13 2021...
+INFO: [Common 17-206] Exiting Vivado at Wed Feb 17 05:38:13 2021...

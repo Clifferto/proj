@@ -77,6 +77,7 @@ public:
   // module pin-to-pin RTL interface
 
   sc_core::sc_in< bool > aclk;
+  sc_core::sc_in< bool > aclk1;
   sc_core::sc_in< bool > aresetn;
   sc_core::sc_in< sc_dt::sc_bv<32> > S00_AXI_awaddr;
   sc_core::sc_in< sc_dt::sc_bv<3> > S00_AXI_awprot;

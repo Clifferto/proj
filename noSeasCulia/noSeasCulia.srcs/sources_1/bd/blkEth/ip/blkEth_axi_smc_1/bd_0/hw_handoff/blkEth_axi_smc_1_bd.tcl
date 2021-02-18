@@ -1,6 +1,6 @@
 
 ################################################################
-# This is a generated script based on design: bd_4e4d
+# This is a generated script based on design: bd_4e4d_0
 #
 # Though there are limitations about the generated script,
 # the main purpose of this utility is to make learning
@@ -35,7 +35,7 @@ if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
 ################################################################
 
 # To test this script, run the following commands from Vivado Tcl console:
-# source bd_4e4d_script.tcl
+# source bd_4e4d_0_script.tcl
 
 # If there is no project opened, this script will create a
 # project, but make sure you do not have an existing project
@@ -50,7 +50,7 @@ if { $list_projs eq "" } {
 
 # CHANGE DESIGN NAME HERE
 variable design_name
-set design_name bd_4e4d
+set design_name bd_4e4d_0
 
 # If you do not already have an existing IP Integrator design open,
 # you can create a design using the following command:
@@ -3030,7 +3030,7 @@ proc create_hier_cell_m00_nodes { parentCell nameHier } {
   # Create instance: m00_ar_node, and set properties
   set m00_ar_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 m00_ar_node ]
   set_property -dict [ list \
-   CONFIG.ACLK_RELATIONSHIP {1} \
+   CONFIG.ACLK_RELATIONSHIP {2} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {2} \
    CONFIG.ID_WIDTH {1} \
@@ -3080,7 +3080,7 @@ proc create_hier_cell_m00_nodes { parentCell nameHier } {
   # Create instance: m00_aw_node, and set properties
   set m00_aw_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 m00_aw_node ]
   set_property -dict [ list \
-   CONFIG.ACLK_RELATIONSHIP {1} \
+   CONFIG.ACLK_RELATIONSHIP {2} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {3} \
    CONFIG.ID_WIDTH {1} \
@@ -3130,7 +3130,7 @@ proc create_hier_cell_m00_nodes { parentCell nameHier } {
   # Create instance: m00_b_node, and set properties
   set m00_b_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 m00_b_node ]
   set_property -dict [ list \
-   CONFIG.ACLK_RELATIONSHIP {1} \
+   CONFIG.ACLK_RELATIONSHIP {-2} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {4} \
    CONFIG.ID_WIDTH {1} \
@@ -3179,7 +3179,7 @@ proc create_hier_cell_m00_nodes { parentCell nameHier } {
   # Create instance: m00_r_node, and set properties
   set m00_r_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 m00_r_node ]
   set_property -dict [ list \
-   CONFIG.ACLK_RELATIONSHIP {1} \
+   CONFIG.ACLK_RELATIONSHIP {-2} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {0} \
    CONFIG.ID_WIDTH {1} \
@@ -3229,7 +3229,7 @@ proc create_hier_cell_m00_nodes { parentCell nameHier } {
   # Create instance: m00_w_node, and set properties
   set m00_w_node [ create_bd_cell -type ip -vlnv xilinx.com:ip:sc_node:1.0 m00_w_node ]
   set_property -dict [ list \
-   CONFIG.ACLK_RELATIONSHIP {1} \
+   CONFIG.ACLK_RELATIONSHIP {2} \
    CONFIG.ADDR_WIDTH {32} \
    CONFIG.CHANNEL {1} \
    CONFIG.ID_WIDTH {1} \
@@ -3439,6 +3439,7 @@ proc create_hier_cell_clk_map { parentCell nameHier } {
   create_bd_pin -dir O -type clk S00_ACLK
   create_bd_pin -dir O -from 0 -to 0 -type rst S00_ARESETN
   create_bd_pin -dir I -type clk aclk
+  create_bd_pin -dir I -type clk aclk1
   create_bd_pin -dir I -type rst aresetn
   create_bd_pin -dir O -type rst aresetn_out
   create_bd_pin -dir O -type clk swbd_aclk
@@ -3447,6 +3448,13 @@ proc create_hier_cell_clk_map { parentCell nameHier } {
   # Create instance: one, and set properties
   set one [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 one ]
 
+  # Create instance: psr0, and set properties
+  set psr0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 psr0 ]
+  set_property -dict [ list \
+   CONFIG.C_AUX_RESET_HIGH {0} \
+   CONFIG.C_AUX_RST_WIDTH {1} \
+ ] $psr0
+
   # Create instance: psr_aclk, and set properties
   set psr_aclk [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 psr_aclk ]
   set_property -dict [ list \
@@ -3454,11 +3462,21 @@ proc create_hier_cell_clk_map { parentCell nameHier } {
    CONFIG.C_AUX_RST_WIDTH {1} \
  ] $psr_aclk
 
+  # Create instance: psr_aclk1, and set properties
+  set psr_aclk1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 psr_aclk1 ]
+  set_property -dict [ list \
+   CONFIG.C_AUX_RESET_HIGH {0} \
+   CONFIG.C_AUX_RST_WIDTH {1} \
+ ] $psr_aclk1
+
   # Create port connections
-  connect_bd_net -net clk_map_aclk_net [get_bd_pins M00_ACLK] [get_bd_pins M01_ACLK] [get_bd_pins M02_ACLK] [get_bd_pins M03_ACLK] [get_bd_pins M04_ACLK] [get_bd_pins M05_ACLK] [get_bd_pins S00_ACLK] [get_bd_pins aclk] [get_bd_pins swbd_aclk] [get_bd_pins psr_aclk/slowest_sync_clk]
-  connect_bd_net -net clk_map_aresetn_net [get_bd_pins aresetn] [get_bd_pins psr_aclk/aux_reset_in]
-  connect_bd_net -net one_dout [get_bd_pins one/dout] [get_bd_pins psr_aclk/ext_reset_in]
-  connect_bd_net -net psr_aclk_interconnect_aresetn [get_bd_pins M00_ARESETN] [get_bd_pins M01_ARESETN] [get_bd_pins M02_ARESETN] [get_bd_pins M03_ARESETN] [get_bd_pins M04_ARESETN] [get_bd_pins M05_ARESETN] [get_bd_pins S00_ARESETN] [get_bd_pins swbd_aresetn] [get_bd_pins psr_aclk/interconnect_aresetn]
+  connect_bd_net -net clk_map_aclk1_net [get_bd_pins M00_ACLK] [get_bd_pins aclk1] [get_bd_pins psr_aclk1/slowest_sync_clk]
+  connect_bd_net -net clk_map_aclk_net [get_bd_pins M01_ACLK] [get_bd_pins M02_ACLK] [get_bd_pins M03_ACLK] [get_bd_pins M04_ACLK] [get_bd_pins M05_ACLK] [get_bd_pins S00_ACLK] [get_bd_pins aclk] [get_bd_pins swbd_aclk] [get_bd_pins psr0/slowest_sync_clk] [get_bd_pins psr_aclk/slowest_sync_clk]
+  connect_bd_net -net clk_map_aresetn_net [get_bd_pins aresetn] [get_bd_pins psr0/aux_reset_in] [get_bd_pins psr_aclk/aux_reset_in] [get_bd_pins psr_aclk1/aux_reset_in]
+  connect_bd_net -net one_dout [get_bd_pins one/dout] [get_bd_pins psr0/ext_reset_in]
+  connect_bd_net -net psr0_interconnect_aresetn [get_bd_pins psr0/interconnect_aresetn] [get_bd_pins psr_aclk/ext_reset_in] [get_bd_pins psr_aclk1/ext_reset_in]
+  connect_bd_net -net psr_aclk1_interconnect_aresetn [get_bd_pins M00_ARESETN] [get_bd_pins psr_aclk1/interconnect_aresetn]
+  connect_bd_net -net psr_aclk_interconnect_aresetn [get_bd_pins M01_ARESETN] [get_bd_pins M02_ARESETN] [get_bd_pins M03_ARESETN] [get_bd_pins M04_ARESETN] [get_bd_pins M05_ARESETN] [get_bd_pins S00_ARESETN] [get_bd_pins swbd_aresetn] [get_bd_pins psr_aclk/interconnect_aresetn]
 
   # Restore current instance
   current_bd_instance $oldCurInst
@@ -3568,8 +3586,12 @@ proc create_root_design { parentCell } {
   # Create ports
   set aclk [ create_bd_port -dir I -type clk aclk ]
   set_property -dict [ list \
-   CONFIG.ASSOCIATED_BUSIF {M00_AXI:M01_AXI:M02_AXI:M03_AXI:M04_AXI:M05_AXI:S00_AXI} \
+   CONFIG.ASSOCIATED_BUSIF {M01_AXI:M02_AXI:M03_AXI:M04_AXI:M05_AXI:S00_AXI} \
  ] $aclk
+  set aclk1 [ create_bd_port -dir I -type clk aclk1 ]
+  set_property -dict [ list \
+   CONFIG.ASSOCIATED_BUSIF {M00_AXI} \
+ ] $aclk1
   set aresetn [ create_bd_port -dir I -type rst aresetn ]
   set_property -dict [ list \
    CONFIG.POLARITY {ACTIVE_LOW} \
@@ -3857,6 +3879,7 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net s00_nodes_M_SC_W [get_bd_intf_pins s00_nodes/M_SC_W] [get_bd_intf_pins switchboards/S00_SC_W]
 
   # Create port connections
+  connect_bd_net -net aclk1_1 [get_bd_ports aclk1] [get_bd_pins clk_map/aclk1]
   connect_bd_net -net aclk_1 [get_bd_pins clk_map/S00_ACLK] [get_bd_pins s00_axi2sc/aclk] [get_bd_pins s00_entry_pipeline/aclk] [get_bd_pins s00_nodes/s_sc_clk]
   connect_bd_net -net aclk_net [get_bd_ports aclk] [get_bd_pins clk_map/aclk]
   connect_bd_net -net aresetn_1 [get_bd_ports aresetn] [get_bd_pins clk_map/aresetn]
